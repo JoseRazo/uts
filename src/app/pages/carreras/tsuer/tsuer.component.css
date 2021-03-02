@@ -1,0 +1,25 @@
+.mb {
+    margin-bottom: 3rem
+}
+.list-group-item {
+    border: none
+}
+.flex-column {
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray
+}
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #026509;
+}
+
+@media screen and (max-width: 767px) {
+    .flex-column {
+        border-right: 1px solid gray;
+        border-bottom: 0
+    }
+}

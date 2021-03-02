@@ -1,0 +1,36 @@
+.navbar-default .navbar-nav > li.dropdown:hover > a, 
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+    background-color: rgb(231, 231, 231);
+    color: rgb(85, 85, 85);
+}
+
+.btn-group:hover .dropdown-menu {
+    display: block;
+    margin: auto;
+    border-left: 4px solid rgb(0, 35, 105);
+
+}
+
+.btn-group:hover .dropdown-menu li .dropdown-menu {
+    display: block;
+    margin: auto;
+    border-left: 4px solid rgb(0, 35, 105);
+
+}
+
+.dropdown-item:hover{
+    background-color: rgb(41, 93, 138);
+}
+
+h6 {
+    border-bottom: 0px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 991px) {
+    .navleft-invisible {
+        visibility: hidden !important;
+        display: none;
+    }
+}

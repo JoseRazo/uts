@@ -1,0 +1,204 @@
+.img-logo {
+    width: 100%
+}
+.text-uts {
+    color: #002369;
+}
+.text-anhelo {
+    color: #990000;
+}
+a.mapa {
+    float: left;
+    display: block;
+    height: 24px;
+    line-height: 22px;
+    background: url("../../../assets/img/accesibilidad/mapa-del-sitio.png") 0 0 no-repeat;
+    text-decoration: none;
+    color: #060606;
+    padding: 0px 0px 0px 45px;
+    margin-bottom: 10px;
+    font-size: .8rem;
+}
+
+a:hover.mapa {
+    background-position: -25px 0;
+    background: url("../../../assets/img/accesibilidad/mapa-del-sitio-roll.png") 0 0 no-repeat;
+    color: #00ab86;
+    text-decoration: underline;
+}
+
+a.mail {
+    float: left;
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    background: url("../../../assets/img/accesibilidad/mail.png") 0 0 no-repeat;
+    text-decoration: none;
+    color: #060606;
+    padding: 0px 0px 0px 40px;
+    margin-bottom: 10px;
+    font-size: .8rem;
+}
+
+a:hover.mail {
+    background-position: -25px 0;
+    background: url("../../../assets/img/accesibilidad/mail-roll.png") 0 0 no-repeat;
+    color: #00ab86;
+    text-decoration: underline;
+}
+
+a.accesibilidad {
+    float: left;
+    display: block;
+    height: 32px;
+    line-height: 22px;
+    background: url("../../../assets/img/accesibilidad/accesibilidad.png") 0 0 no-repeat;
+    text-decoration: none;
+    color: #060606;
+    padding: 0px 0px 0px 35px;
+    margin-bottom: 10px;
+    font-size: .8rem;
+}
+
+a:hover.accesibilidad {
+    background-position: -37px 0;
+    background: url("../../../assets/img/accesibilidad/accesibilidad-roll.png") 0 0 no-repeat;
+    color: #00ab86;
+    text-decoration: underline;
+}
+
+a.chat {
+    float: left;
+    display: block;
+    height: 32px;
+    line-height: 22px;
+    background: url("../../../assets/img/accesibilidad/File-Chart-icon.png") 0 0 no-repeat;
+    text-decoration: none;
+    color: #060606;
+    padding: 0px 0px 0px 40px;
+    margin-bottom: 10px;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+a:hover.chat {
+    background-position: -30px 0;
+    background: url("../../../assets/img/accesibilidad/File-Chart-icon.png") 0 0 no-repeat;
+    color: #00ab86;
+    text-decoration: underline;
+}
+
+a.twitter {
+    float: right;
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 22px;
+    background: url("../../../assets/img/accesibilidad/twitter-i.png") 0 0 no-repeat;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+a:hover.twitter {
+    background-position: -35px 0;
+    background: url("../../../assets/img/accesibilidad/twitter-i-roll.png") 0 0 no-repeat;
+    text-decoration: underline;
+}
+
+a.facebook {
+    float: right;
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 22px;
+    background: url("../../../assets/img/accesibilidad/facebook-i.png") 0 0 no-repeat;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+a:hover.facebook {
+    background-position: -35px 0;
+    background: url("../../../assets/img/accesibilidad/facebook-i-roll.png") 0 0 no-repeat;
+    text-decoration: underline;
+}
+
+a.youtube {
+    float: right;
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 22px;
+    background: url("../../../assets/img/accesibilidad/youtube-i.png") 0 0 no-repeat;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+a:hover.youtube {
+    background-position: -35px 0;
+    background: url("../../../assets/img/accesibilidad/youtube-i-roll.png") 0 0 no-repeat;
+    text-decoration: underline;
+}
+a.instagram {
+    float: right;
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 22px;
+   background: url("../../../assets/img/accesibilidad/instagram_blue.png") 0 0 no-repeat; 
+    text-decoration: none;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+a:hover.instagram {
+    background-position: -35px 0;
+    background: url("../../../assets/img/accesibilidad/instagram_green.png") 0 0 no-repeat;
+    text-decoration: underline;
+}
+#moduloAccesibilidad {
+    top: 3%;
+    left: 8px;
+    width: 33px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 9999995;
+    border-radius: 5px;
+    opacity: 0;
+}
+
+.accesible1 {
+    cursor: pointer;
+}
+
+.aumentado {
+    min-width: 190% !important;
+    zoom: 2 !important;
+}
+.contenido-section {
+    margin: 2rem 0 2rem 0;
+}
+
+@media screen and (max-width: 575px) {
+    .img-logo {
+        width: 220px
+    }
+    .redes-center {
+        display: inline-flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 767px) {
+    .title-invisible {
+        visibility: hidden !important;
+        display: none;
+    }
+}
+.ih-item.circle .img::before {
+    box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.ih-item.circle.effect2 .info h3 {
+    font-size: 18px;
+}
