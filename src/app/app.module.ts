@@ -107,9 +107,7 @@ import { Noticia34Component } from './pages/noticias/noticia34/noticia34.compone
 import { NormativaComponent } from './pages/transparencia/normativa/normativa.component';
 import { Covid19Component } from './pages/covid19/covid19.component';
 import { ModalsComponent } from './views/modals/modals.component';
-
-
-
+import { ArchivisticaComponent } from './pages/transparencia/archivistica/archivistica.component';
 
 @NgModule({
   declarations: [
@@ -218,6 +216,7 @@ import { ModalsComponent } from './views/modals/modals.component';
     NormativaComponent,
     Covid19Component,
     ModalsComponent,
+    ArchivisticaComponent,
 
   ],
   imports: [
@@ -410,6 +409,10 @@ import { ModalsComponent } from './views/modals/modals.component';
         component: SgcComponent
       },
       //TRANSPARENCIA
+      {
+        path: 'archivistica',
+        component: ArchivisticaComponent
+      },
       {
         path: 'buzon',
         component: BuzonComponent
@@ -613,4 +616,3 @@ import { ModalsComponent } from './views/modals/modals.component';
 
 })
 export class AppModule { }
-
