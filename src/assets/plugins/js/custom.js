@@ -1,4 +1,4 @@
-/* SCRIPT SLIDER VIDEOS INSTITUCIONALES 
+/* SCRIPT SLIDER VIDEOS INSTITUCIONALES
     jssor_1_slider_init = function () {
 
         var jssor_1_options = {
@@ -106,7 +106,7 @@ $('a.scroll-top').click(function (event) {
 });
 /* Fin Boton ir arriba */
 
-/* Script para llamar el archivo que cuenta las visitas al sitio web y las guarda en la base de datos. El id #contador 
+/* Script para llamar el archivo que cuenta las visitas al sitio web y las guarda en la base de datos. El id #contador
 lo ponemos en la vista de principal */
 $(document).ready(function () {
     $('#contador').load('http://www.utsalamanca.edu.mx/assets/contador_visitas/uts/index.php');
