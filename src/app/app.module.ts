@@ -108,6 +108,7 @@ import { NormativaComponent } from './pages/transparencia/normativa/normativa.co
 import { Covid19Component } from './pages/covid19/covid19.component';
 import { ModalsComponent } from './views/modals/modals.component';
 import { ArchivisticaComponent } from './pages/transparencia/archivistica/archivistica.component';
+import { IdgsComponent } from './pages/carreras/idgs/idgs.component';
 
 @NgModule({
   declarations: [
@@ -217,6 +218,7 @@ import { ArchivisticaComponent } from './pages/transparencia/archivistica/archiv
     Covid19Component,
     ModalsComponent,
     ArchivisticaComponent,
+    IdgsComponent,
 
   ],
   imports: [
@@ -262,6 +264,10 @@ import { ArchivisticaComponent } from './pages/transparencia/archivistica/archiv
       {
         path: 'cuerpos-academicos',
         component: CuerposAcademicosComponent
+      },
+      {
+        path: 'idgs',
+        component: IdgsComponent
       },
       {
         path: 'lgch',
