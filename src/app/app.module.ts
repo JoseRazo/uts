@@ -109,6 +109,7 @@ import { Covid19Component } from './pages/covid19/covid19.component';
 import { ModalsComponent } from './views/modals/modals.component';
 import { ArchivisticaComponent } from './pages/transparencia/archivistica/archivistica.component';
 import { IdgsComponent } from './pages/carreras/idgs/idgs.component';
+import { DirectorioCjmuComponent } from './pages/universidad/directorio-cjmu/directorio-cjmu.component';
 
 @NgModule({
   declarations: [
@@ -219,6 +220,7 @@ import { IdgsComponent } from './pages/carreras/idgs/idgs.component';
     ModalsComponent,
     ArchivisticaComponent,
     IdgsComponent,
+    DirectorioCjmuComponent,
 
   ],
   imports: [
@@ -247,6 +249,10 @@ import { IdgsComponent } from './pages/carreras/idgs/idgs.component';
       {
         path: 'directorio',
         component: DirectorioComponent
+      },
+      {
+        path: 'directorio-enlaces-cjmu',
+        component: DirectorioCjmuComponent
       },
       {
         path: 'filosofia',
