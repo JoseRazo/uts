@@ -110,6 +110,7 @@ import { ModalsComponent } from './views/modals/modals.component';
 import { ArchivisticaComponent } from './pages/transparencia/archivistica/archivistica.component';
 import { IdgsComponent } from './pages/carreras/idgs/idgs.component';
 import { DirectorioCjmuComponent } from './pages/universidad/directorio-cjmu/directorio-cjmu.component';
+import { HorariosCursoNivelacionComponent } from './pages/alumnos/horarios-curso-nivelacion/horarios-curso-nivelacion.component';
 
 @NgModule({
   declarations: [
@@ -221,6 +222,7 @@ import { DirectorioCjmuComponent } from './pages/universidad/directorio-cjmu/dir
     ArchivisticaComponent,
     IdgsComponent,
     DirectorioCjmuComponent,
+    HorariosCursoNivelacionComponent,
 
   ],
   imports: [
@@ -347,6 +349,10 @@ import { DirectorioCjmuComponent } from './pages/universidad/directorio-cjmu/dir
       {
         path: 'horarios',
         component: HorariosComponent
+      },
+      {
+        path: 'horarios-curso-nivelacion',
+        component: HorariosCursoNivelacionComponent
       },
       {
         path: 'resultados-examen-admision',
