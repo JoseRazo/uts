@@ -111,6 +111,7 @@ import { ArchivisticaComponent } from './pages/transparencia/archivistica/archiv
 import { IdgsComponent } from './pages/carreras/idgs/idgs.component';
 import { DirectorioCjmuComponent } from './pages/universidad/directorio-cjmu/directorio-cjmu.component';
 import { HorariosCursoNivelacionComponent } from './pages/alumnos/horarios-curso-nivelacion/horarios-curso-nivelacion.component';
+import { Noticia35Component } from './pages/noticias/noticia35/noticia35.component';
 
 @NgModule({
   declarations: [
@@ -223,6 +224,7 @@ import { HorariosCursoNivelacionComponent } from './pages/alumnos/horarios-curso
     IdgsComponent,
     DirectorioCjmuComponent,
     HorariosCursoNivelacionComponent,
+    Noticia35Component,
 
   ],
   imports: [
@@ -471,6 +473,10 @@ import { HorariosCursoNivelacionComponent } from './pages/alumnos/horarios-curso
       {
         path: 'noticias',
         component: NoticiasComponent
+      },
+      {
+        path: 'noticia35',
+        component: Noticia35Component
       },
       {
         path: 'noticia34',
