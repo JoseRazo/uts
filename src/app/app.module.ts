@@ -112,6 +112,7 @@ import { IdgsComponent } from './pages/carreras/idgs/idgs.component';
 import { DirectorioCjmuComponent } from './pages/universidad/directorio-cjmu/directorio-cjmu.component';
 import { HorariosCursoNivelacionComponent } from './pages/alumnos/horarios-curso-nivelacion/horarios-curso-nivelacion.component';
 import { Noticia35Component } from './pages/noticias/noticia35/noticia35.component';
+import { Noticia36Component } from './pages/noticias/noticia36/noticia36.component';
 
 @NgModule({
   declarations: [
@@ -225,6 +226,7 @@ import { Noticia35Component } from './pages/noticias/noticia35/noticia35.compone
     DirectorioCjmuComponent,
     HorariosCursoNivelacionComponent,
     Noticia35Component,
+    Noticia36Component,
 
   ],
   imports: [
@@ -473,6 +475,10 @@ import { Noticia35Component } from './pages/noticias/noticia35/noticia35.compone
       {
         path: 'noticias',
         component: NoticiasComponent
+      },
+      {
+        path: 'noticia36',
+        component: Noticia36Component
       },
       {
         path: 'noticia35',
