@@ -114,6 +114,7 @@ import { HorariosCursoNivelacionComponent } from './pages/alumnos/horarios-curso
 import { Noticia35Component } from './pages/noticias/noticia35/noticia35.component';
 import { Noticia36Component } from './pages/noticias/noticia36/noticia36.component';
 import { Noticia37Component } from './pages/noticias/noticia37/noticia37.component';
+import { Noticia38Component } from './pages/noticias/noticia38/noticia38.component';
 
 @NgModule({
   declarations: [
@@ -229,6 +230,7 @@ import { Noticia37Component } from './pages/noticias/noticia37/noticia37.compone
     Noticia35Component,
     Noticia36Component,
     Noticia37Component,
+    Noticia38Component,
 
   ],
   imports: [
@@ -477,6 +479,10 @@ import { Noticia37Component } from './pages/noticias/noticia37/noticia37.compone
       {
         path: 'noticias',
         component: NoticiasComponent
+      },
+      {
+        path: 'noticia38',
+        component: Noticia38Component
       },
       {
         path: 'noticia37',
