@@ -20,9 +20,9 @@ img {
 
 .mycontainer div { 
     transition: all 0.5s ease;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
+}
+
+.hidden {
+display: none;
+}
+
