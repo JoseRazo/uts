@@ -118,6 +118,9 @@ import { Noticia38Component } from './pages/noticias/noticia38/noticia38.compone
 import { Noticia39Component } from './pages/noticias/noticia39/noticia39.component';
 import { Noticia40Component } from './pages/noticias/noticia40/noticia40.component';
 import { Noticia44Component } from './pages/noticias/noticia44/noticia44.component';
+import { Noticia45Component } from './pages/noticias/noticia45/noticia45.component';
+import { Noticia46Component } from './pages/noticias/noticia46/noticia46.component';
+import { Noticia47Component } from './pages/noticias/noticia47/noticia47.component';
 
 @NgModule({
   declarations: [
@@ -237,6 +240,9 @@ import { Noticia44Component } from './pages/noticias/noticia44/noticia44.compone
     Noticia39Component,
     Noticia40Component,
     Noticia44Component,
+    Noticia45Component,
+    Noticia46Component,
+    Noticia47Component,
 
   ],
   imports: [
@@ -485,6 +491,18 @@ import { Noticia44Component } from './pages/noticias/noticia44/noticia44.compone
       {
         path: 'noticias',
         component: NoticiasComponent
+      },
+      {
+        path: 'noticia47',
+        component: Noticia47Component
+      },
+      {
+        path: 'noticia46',
+        component: Noticia46Component
+      },
+      {
+        path: 'noticia45',
+        component: Noticia45Component
       },
       {
         path: 'noticia44',
