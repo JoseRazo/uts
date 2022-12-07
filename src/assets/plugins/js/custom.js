@@ -109,5 +109,5 @@ $('a.scroll-top').click(function (event) {
 /* Script para llamar el archivo que cuenta las visitas al sitio web y las guarda en la base de datos. El id #contador
 lo ponemos en la vista de principal */
 $(document).ready(function () {
-    $('#contador').load('http://www.utsalamanca.edu.mx/assets/contador_visitas/uts/index.php');
+    $('#contador').load('https://www.utsalamanca.edu.mx/assets/contador_visitas/uts/index.php');
 });
