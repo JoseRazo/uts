@@ -4,6 +4,28 @@
 <div>
   <img src="assets/img/noticias/banner_noticias.jpg" alt="Noticias" title="Noticias" />
 </div>
+<h1>Noticias</h1>
+<div>
+  <table class="table" id='tab'>
+    <thead>
+      <tr>
+        <th scope="col">Titulo</th>
+        <th scope="col">Contenido</th>
+        <th scope="col">Fecha</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let noticia of noticias">
+        <td>{{ noticia.title }}</td>
+        <td [innerHTML]="noticia.content"></td>
+        <td>{{ noticia.created_at }}</td>
+        <td> <button (click)="noticiaDetails(noticia.id)" class='btn btn-info' data-toggle="modal"
+            data-target="#myModal">Detalles</button> </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <div class="embed-responsive embed-responsive-16by9" style="height: 640px">
   <iframe class="embed-responsive-item" src="https://www.utsalamanca.edu.mx/blog" allowfullscreen></iframe>
