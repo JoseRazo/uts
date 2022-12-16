@@ -4,31 +4,39 @@
 <div>
   <img src="assets/img/noticias/banner_noticias.jpg" alt="Noticias" title="Noticias" />
 </div>
-<h1>Noticias</h1>
-<div>
-  <table class="table" id='tab'>
-    <thead>
-      <tr>
-        <th scope="col">Titulo</th>
-        <th scope="col">Contenido</th>
-        <th scope="col">Fecha</th>
-        <th>Action</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let noticia of noticias">
-        <td>{{ noticia.title }}</td>
-        <td [innerHTML]="noticia.content"></td>
-        <td>{{ noticia.created_at }}</td>
-        <td> <button (click)="noticiaDetails(noticia.id)" class='btn btn-info' data-toggle="modal"
-            data-target="#myModal">Detalles</button> </td>
-      </tr>
-    </tbody>
-  </table>
+
+<div class="row mt-3">
+  <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 card-deck" *ngFor="let noticia of noticias">
+    <div class="card mb-3" style="width: 100%;">
+      <div class="ih-item square colored effect6 bottom_to_top"><a role="button" (click)="noticiaDetails(noticia.slug)">
+          <div class="img">
+            <img src="https://utsalamanca.edu.mx/blog/images/articles/{{ noticia.images[0].name }}"
+              alt="{{ noticia.title }}" title="{{ noticia.title }}">
+          </div>
+          <div class="info">
+            <h3>LEER MÁS</h3>
+          </div>
+        </a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{ noticia.title }}</h5>
+      </div>
+      <div class="card-footer">
+        <div class="row">
+          <div class="col">
+            <span class="text-muted"><a class="card-link" role="button" (click)="noticiaDetails(noticia.slug)">Ver Más...</a></span>
+          </div>
+          <div class="col text-right">
+            <small class="text-muted"><i class="fa fa-clock-o"></i> {{ noticia.created_at | date }}</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="embed-responsive embed-responsive-16by9" style="height: 640px">
+<!-- <div class="embed-responsive embed-responsive-16by9" style="height: 640px">
   <iframe class="embed-responsive-item" src="https://www.utsalamanca.edu.mx/blog" allowfullscreen></iframe>
-</div>
+</div> -->
 <app-enlaces-organismos-interes></app-enlaces-organismos-interes>
 <app-footer></app-footer>

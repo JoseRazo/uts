@@ -21,8 +21,8 @@ export class NoticiasComponent implements OnInit {
     });
   }
 
-  noticiaDetails(id: number) {
-    this.router.navigate(["noticias", id]);
-    console.log(id);
+  noticiaDetails(slug: number) {
+    this.router.navigate(["noticias", slug]);
+    console.log(slug);
   }
 }

@@ -2,80 +2,30 @@
   <h6>ÚLTIMAS NOTICIAS</h6>
   <div class="bg-light">
     <div class="card-deck bg-light text-center">
-
-      <!-- NOTICIA 49 -->
-      <div class="card contenedor-img ejemplo-1">
-        <!-- colored -->
-        <div class="ih-item square colored effect6 bottom_to_top">
-          <a routerLink="/noticia49">
+      <div class="card mb-3" style="width: 100%;" *ngFor="let noticia of noticias">
+        <div class="ih-item square colored effect6 bottom_to_top"><a role="button" (click)="noticiaDetails(noticia.slug)">
             <div class="img">
-              <img src="assets/img/noticias/noticia49/img2.png" alt="img" />
+              <img src="https://utsalamanca.edu.mx/blog/images/articles/{{ noticia.images[0].name }}"
+                alt="{{ noticia.title }}" title="{{ noticia.title }}">
             </div>
             <div class="info">
               <h3>LEER MÁS</h3>
             </div>
           </a>
         </div>
-        <!-- end colored -->
         <div class="card-body">
-          <h5 class="card-title">
-            Acciones para poner fin a la violencia contra las mujeres.
-          </h5>
+            <h5 class="card-title"><a role="button" (click)="noticiaDetails(noticia.slug)">{{ noticia.title }}</a></h5>
         </div>
         <div class="card-footer">
-          <small class="text-muted">[ 03 de diciembre del 2022 ]</small>
+          <div class="text-center">
+            <small class="text-muted"><i class="fa fa-clock-o"></i> {{ noticia.created_at | date }}</small>
+          </div>
+
         </div>
       </div>
-      <!--FIN NOTICIA 49 -->
-
-      <!-- NOTICIA #48 -->
-      <div class="card contenedor-img ejemplo-1">
-        <div class="ih-item square colored effect7">
-          <a routerLink="/noticia48">
-            <div class="img">
-              <img src="assets/img/noticias/noticia48/img2.JPG" alt="img" />
-            </div>
-            <div class="info">
-              <h3>LEER MÁS</h3>
-            </div>
-          </a>
-        </div>
-
-        <div class="card-body">
-          <h5 class="card-title">Reconocimiento de la SMAOT por la implementación del Sistema de Administración Pública Sustentable</h5>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">[ 30 de noviembre del 2022 ]</small>
-        </div>
-      </div>
-      <!-- FIN NOTICIA #48 -->
-
-      <!-- NOTICIA 47 -->
-      <div class="card contenedor-img ejemplo-1">
-        <!-- colored -->
-        <div class="ih-item square colored effect6 bottom_to_top">
-          <a routerLink="/noticia47">
-            <div class="img">
-              <img src="assets/img/noticias/noticia47/img2.jpg" alt="img" />
-            </div>
-            <div class="info">
-              <h3>LEER MÁS</h3>
-            </div>
-          </a>
-        </div>
-        <!-- end colored -->
-        <div class="card-body">
-          <h5 class="card-title">Premio de Sustentabilidad Energética Guanajuato 2022</h5>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">[ 29 de noviembre del 2022 ]</small>
-        </div>
-      </div>
-      <!--FIN NOTICIA 47 -->
-
     </div>
     <div class="p-3">
-      <a class="btn btn-outline-info btn-block" href="/noticias">Ver todas las noticias</a>
+      <a class="btn btn-outline-info btn-block" routerLink="/noticias">Ver todas las noticias</a>
     </div>
   </div>
 </article>

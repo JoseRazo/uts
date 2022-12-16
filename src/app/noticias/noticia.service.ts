@@ -7,11 +7,23 @@ import { Observable } from 'rxjs';
 })
 
 export class NoticiaService {
-  public baseUrl = "https://utsalamanca.edu.mx/blog/api/noticias";
+  public baseUrl = "https://utsalamanca.edu.mx/blog/api";
 
   constructor(private httpClient: HttpClient) { }
 
   public getNoticias(): Observable<any> {
-    return this.httpClient.get(this.baseUrl);
+    return this.httpClient.get(this.baseUrl + '/noticias');
+  }
+
+  public getUltimasNoticias(): Observable<any> {
+    return this.httpClient.get(this.baseUrl + '/ultimas-noticias');
+  }
+
+  public getNoticiasDestacadas(): Observable<any> {
+    return this.httpClient.get(this.baseUrl + '/noticias-destacadas');
+  }
+
+  public getNoticia(slug: string): Observable<Object> {
+    return this.httpClient.get(`${this.baseUrl}/noticias/${slug}`);
   }
 }
