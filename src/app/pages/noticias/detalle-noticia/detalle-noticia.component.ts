@@ -11,13 +11,12 @@ import { ActivatedRoute, Router } from "@angular/router";
 export class DetalleNoticiaComponent implements OnInit {
   slug!: string;
   noticia!: Noticia;
-  
 
   constructor(
     private noticiaService: NoticiaService,
     private route: ActivatedRoute,
     private router: Router
-  ) {}
+  ) {this.router.routeReuseStrategy.shouldReuseRoute = () => false;}
 
   ngOnInit() {
     this.noticia = new Noticia();
@@ -31,5 +30,4 @@ export class DetalleNoticiaComponent implements OnInit {
       (error) => console.log(error)
     );
   }
-
 }

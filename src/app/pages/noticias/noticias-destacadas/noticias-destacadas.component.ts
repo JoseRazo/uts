@@ -20,7 +20,7 @@ export class NoticiasDestacadasComponent implements OnInit {
     });
   }
 
-  noticiaDetails(slug: number) {
+  noticiaDetails(slug: string) {
     this.router.navigate(["noticias", slug]);
     console.log(slug);
   }

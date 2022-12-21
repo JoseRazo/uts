@@ -19,7 +19,8 @@ La Universidad Tecnológica de Salamanca, es una universidad pública del munici
 ## Subir cambios del proyecto a servidor de producción
 
 - Entrar al contenedor `docker exec -i -t uts-web-1 /bin/sh`
-- Compilar el codigo **`ng build --prod --build-optimizer --base-href=./`**
+- Compilar el codigo **`ng build --prod --build-optimizer --base-href=/`**
+- Si se congela el equipo al compilar usa este comando  **`node --max_old_space_size=8192 ./node_modules/@angular/cli/bin/ng build --prod --build-optimizer --base-href=/`**
 - Subir archivos de la carpeta /dist/UTS/ al servidor de producción
 
 ##

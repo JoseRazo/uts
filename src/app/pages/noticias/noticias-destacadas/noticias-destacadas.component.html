@@ -5,7 +5,7 @@
       <img class="mr-3" src="https://utsalamanca.edu.mx/blog/images/articles/{{ noticia.images[0].name }}" alt="{{ noticia.title }}" title="{{ noticia.title }}">
       <div class="media-body">
         <h5 class="mt-0 mb-1">{{ noticia.title }}</h5>
-        <a href="/noticias/{{ noticia.slug }}">LEER MÁS...</a>
+        <a routerLink="/noticias/{{ noticia.slug }}">LEER MÁS...</a>
       </div>
     </li>
   </ul><a class="btn btn-outline-info btn-block" routerLink="/noticias">Ver todas las noticias</a>
