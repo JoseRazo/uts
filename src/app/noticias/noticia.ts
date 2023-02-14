@@ -1,13 +1,14 @@
 export class Noticia {
     id!: number;
-    title!: String;
-    content!: String;
+    titulo!: String;
+    contenido!: String;
     slug!: String;
-    images?: Images;
-    created_at!: String;
+    imagen!: String;
+    imagenes?: Imagenes;
+    fecha_evento!: String;
 }
 
-interface Images {
+interface Imagenes {
     id?: number;
-    name?: string;
+    imagen?: string;
 }

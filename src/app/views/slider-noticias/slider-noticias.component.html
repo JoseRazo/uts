@@ -5,8 +5,8 @@
       <div class="card mb-3" style="width: 100%;" *ngFor="let noticia of noticias">
         <div class="ih-item square colored effect6 bottom_to_top"><a role="button" (click)="noticiaDetails(noticia.slug)">
             <div class="img">
-              <img src="https://utsalamanca.edu.mx/blog/images/articles/{{ noticia.images[0].name }}"
-                alt="{{ noticia.title }}" title="{{ noticia.title }}">
+              <img src="{{noticia.imagen}}"
+                alt="{{ noticia.titulo }}" title="{{ noticia.titulo }}">
             </div>
             <div class="info">
               <h3>LEER MÁS</h3>
@@ -14,11 +14,11 @@
           </a>
         </div>
         <div class="card-body">
-            <h5 class="card-title"><a role="button" (click)="noticiaDetails(noticia.slug)">{{ noticia.title }}</a></h5>
+            <h5 class="card-titulo"><a role="button" (click)="noticiaDetails(noticia.slug)">{{ noticia.titulo }}</a></h5>
         </div>
         <div class="card-footer">
           <div class="text-center">
-            <small class="text-muted"><i class="fa fa-clock-o"></i> {{ noticia.created_at | date }}</small>
+            <small class="text-muted"><i class="fa fa-clock-o"></i> {{ noticia.fecha_evento | date }}</small>
           </div>
 
         </div>

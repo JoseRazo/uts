@@ -6,7 +6,7 @@ import { Observable } from "rxjs";
   providedIn: "root",
 })
 export class NoticiaService {
-  public apiUrl = "https://utsalamanca.edu.mx/blog/api";
+  public apiUrl = "https://api.utsalamanca.edu.mx/api";
 
   headers = new HttpHeaders()
     .set("Content-Type", "application/json")
@@ -18,18 +18,18 @@ export class NoticiaService {
   constructor(private httpClient: HttpClient) {}
 
   public getNoticias(): Observable<any> {
-    return this.httpClient.get(this.apiUrl + "/noticias");
+    return this.httpClient.get(this.apiUrl + "/articulos");
   }
 
   public getUltimasNoticias(): Observable<any> {
-    return this.httpClient.get(this.apiUrl + "/ultimas-noticias");
+    return this.httpClient.get(this.apiUrl + "/ultimos-articulos");
   }
 
   public getNoticiasDestacadas(): Observable<any> {
-    return this.httpClient.get(this.apiUrl + "/noticias-destacadas");
+    return this.httpClient.get(this.apiUrl + "/articulos-destacados");
   }
 
   public getNoticia(slug: string): Observable<Object> {
-    return this.httpClient.get(`${this.apiUrl}/noticias/${slug}`);
+    return this.httpClient.get(`${this.apiUrl}/articulos/${slug}`);
   }
 }
