@@ -7,6 +7,7 @@ import { Observable } from "rxjs";
 })
 export class NoticiaService {
   public apiUrl = "https://api.utsalamanca.edu.mx/api";
+  // public apiUrl = "http://127.0.0.1:8001/api";
 
   headers = new HttpHeaders()
     .set("Content-Type", "application/json")
@@ -17,9 +18,13 @@ export class NoticiaService {
 
   constructor(private httpClient: HttpClient) {}
 
-  public getNoticias(): Observable<any> {
-    return this.httpClient.get(this.apiUrl + "/articulos");
+  public getNoticias(page:number): Observable<any> {
+    return this.httpClient.get(this.apiUrl + "/articulos/" + `?page=${page}`);
   }
+
+  // public getNoticias(): Observable<any> {
+  //   return this.httpClient.get(this.apiUrl + "/articulos");
+  // }
 
   public getUltimasNoticias(): Observable<any> {
     return this.httpClient.get(this.apiUrl + "/ultimos-articulos");

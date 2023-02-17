@@ -3,26 +3,42 @@ img {
     width: 100%;
     height: auto;
 }
-.row {
-    margin-right: auto;
-    margin-left: auto;
-}
-.card-deck {
-	margin-right: auto;
-	margin-left: auto;
-}
-.card-deck .card{
-    margin-bottom: 2rem;
-    margin-right: auto;
-    margin-left: auto;
-    width: 247px
+
+@media (min-width: 576px) {
+    .card-deck {
+        margin-right: 0;
+        margin-left: 0;
+    }
 }
 
-.mycontainer div { 
+.mycontainer div {
     transition: all 0.5s ease;
 }
 
 .hidden {
-display: none;
+    display: none;
 }
 
+.btn-primary {
+    height: 50px;
+    width: 110px;
+    background: #00ab86;
+    margin: 20px;
+    float: left;
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition: all 0.5s ease-in-out;
+    border: 0px;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    -webkit-transform: scale(1.1);
+    background: #002369;
+}
+
+button:disabled,
+button[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
