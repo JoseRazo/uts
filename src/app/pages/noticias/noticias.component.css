@@ -22,7 +22,7 @@ img {
 .btn-primary {
     height: 50px;
     width: 110px;
-    background: #00ab86;
+    background: #2B9762;
     margin: 20px;
     float: left;
     box-shadow: 0 0 1px #ccc;
@@ -33,7 +33,7 @@ img {
 
 .btn-primary:hover {
     -webkit-transform: scale(1.1);
-    background: #002369;
+    background: #002078;
 }
 
 button:disabled,

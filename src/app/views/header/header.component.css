@@ -3,7 +3,7 @@
 }
 
 .text-uts {
-    color: #002369;
+    color: #002078;
 }
 
 .text-anhelo {
@@ -26,7 +26,7 @@ a.mapa {
 a:hover.mapa {
     background-position: -25px 0;
     background: url("../../../assets/img/accesibilidad/mapa-del-sitio-roll.png") 0 0 no-repeat;
-    color: #00ab86;
+    color: #2B9762;
     text-decoration: underline;
 }
 
@@ -46,7 +46,7 @@ a.mail {
 a:hover.mail {
     background-position: -25px 0;
     background: url("../../../assets/img/accesibilidad/mail-roll.png") 0 0 no-repeat;
-    color: #00ab86;
+    color: #2B9762;
     text-decoration: underline;
 }
 
@@ -66,7 +66,7 @@ a.accesibilidad {
 a:hover.accesibilidad {
     background-position: -37px 0;
     background: url("../../../assets/img/accesibilidad/accesibilidad-roll.png") 0 0 no-repeat;
-    color: #00ab86;
+    color: #2B9762;
     text-decoration: underline;
 }
 
@@ -87,7 +87,7 @@ a.chat {
 a:hover.chat {
     background-position: -30px 0;
     background: url("../../../assets/img/accesibilidad/File-Chart-icon.png") 0 0 no-repeat;
-    color: #00ab86;
+    color: #2B9762;
     text-decoration: underline;
 }
 

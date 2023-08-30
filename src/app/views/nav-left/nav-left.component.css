@@ -8,24 +8,23 @@
 .btn-group:hover .dropdown-menu {
     display: block;
     margin: auto;
-    border-left: 4px solid rgb(0, 35, 105);
+    border-left: 4px solid #002078;
 
 }
 
 .btn-group:hover .dropdown-menu li .dropdown-menu {
     display: block;
     margin: auto;
-    border-left: 4px solid rgb(0, 35, 105);
+    border-left: 4px solid #002078;
 
 }
 
 .dropdown-item:hover{
-    background-color: rgb(41, 93, 138);
+    background-color: #007CF2;
 }
 
 h6 {
     border-bottom: 0px;
-    font-weight: 700;
 }
 
 @media screen and (max-width: 991px) {
