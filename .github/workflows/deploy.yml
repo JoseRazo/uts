@@ -1,19 +1,40 @@
-name: Publish Website to Ubuntu Server
+
+name: CI
+
 on:
   push:
     branches:
       - master
+
 jobs:
-  FTP-Deploy-Action:
-    name: FTP-Deploy-Action
-    runs-on: ubuntu-18.04
+  build:
+
+    # using Ubuntu
+    runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v2.1.0
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
       with:
-        fetch-depth: 2
-    - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        node-version: '14.20'
+
+    - uses: actions/cache@v1
       with:
-        ftp-server: ${{ secrets.FTP_SERVER }}
-        ftp-username: ${{ secrets.FTP_USERNAME }}
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - run: npm install
+    - run: npm install -g @angular/cli > /dev/null
+    - run: ng build --prod
+
+    - name: Install SSH Key
+      uses: shimataro/ssh-key-action@v2
+      with:
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        known_hosts: ${{ secrets.KNOWN_HOSTS }}
+
+    - name: Sync Files to Server
+      run: |
+        rsync -av --delete --exclude='.htaccess' -e 'ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null' $GITHUB_WORKSPACE/dist/uts/ ${{ secrets.FTP_USERNAME }}@${{ secrets.KNOWN_HOSTS }}:/var/www/apps/uts/
