@@ -35,14 +35,6 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         known_hosts: ${{ secrets.KNOWN_HOSTS }}
 
-    - name: Debug Workspace Contents
-      run: |
-        echo "Contents of $GITHUB_WORKSPACE:"
-        ls -la $GITHUB_WORKSPACE
-        echo "Contents of $GITHUB_WORKSPACE/dist/UTS/:"
-        ls -la $GITHUB_WORKSPACE/dist/UTS/
-
-    # Sincronizar archivos en el servidor
     - name: Sync Files to Server
       run: |
         rsync -av --delete --exclude='.htaccess' -e 'ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null' $GITHUB_WORKSPACE/dist/UTS/ ${{ secrets.FTP_USERNAME }}@${{ secrets.KNOWN_HOSTS }}:/var/www/apps/uts/
