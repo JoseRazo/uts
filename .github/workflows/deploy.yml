@@ -35,6 +35,13 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         known_hosts: ${{ secrets.KNOWN_HOSTS }}
 
+    - name: Debug Workspace Contents
+      run: |
+        echo "Contents of $GITHUB_WORKSPACE:"
+        ls -la $GITHUB_WORKSPACE
+        echo "Contents of $GITHUB_WORKSPACE/dist/uts/:"
+        ls -la $GITHUB_WORKSPACE/dist/uts/
+
     # Sincronizar archivos en el servidor
     - name: Sync Files to Server
       run: |
