@@ -21,4 +21,5 @@ interface Convocatoria {
     fecha_fin?: string;
     imagen?: string;
     file?: string;
+    activo?: boolean;
 }

@@ -49,24 +49,30 @@
               <div class="mb-4" *ngFor="let beca of institucion.becas">
                 <h5>{{ beca.nombre }}</h5>
                 <div [innerHTML]="beca.descripcion"></div>
-                <div *ngIf="beca.convocatorias.length != 0">
+                <div *ngIf="beca.convocatorias.length !== 0">
                   <p class="font-weight-bold mt-2">Convocatorias</p>
                   <div *ngFor="let convocatoria of beca.convocatorias">
-                    <p><a href="{{ convocatoria.archivo_convocatoria }}" target="_blank" rel="noopener noreferrer"><img
-                          src="assets/img/iconos/pdf-24_32.png" class="mr-3" alt="Icono pdf."> {{ convocatoria.nombre
-                        }}</a></p>
-                    <p class="card-text"><small class="text-muted">Vigencia de la convocatoria:
-                        <span class="font-weight-bold"> {{ convocatoria.fecha_inicio | date: 'dd/MM/yyyy' }} - {{
-                          convocatoria.fecha_fin | date: 'dd/MM/yyyy' }}</span></small></p>
-                    <a *ngIf="convocatoria.archivo_resultado != null" href="{{ convocatoria.archivo_resultado }}"
-                      target="_blank" class="badge badge-success">Haz clic aquí para ver los resultados de la
-                      convocatoria.</a>
+                    <div *ngIf="convocatoria.activo; else inactivo">
+                      <p><a href="{{ convocatoria.archivo_convocatoria }}" target="_blank" rel="noopener noreferrer"><img
+                            src="assets/img/iconos/pdf-24_32.png" class="mr-3" alt="Icono pdf."> {{ convocatoria.nombre
+                          }}</a></p>
+                      <p class="card-text"><small class="text-muted">Vigencia de la convocatoria:
+                          <span class="font-weight-bold"> {{ convocatoria.fecha_inicio | date: 'dd/MM/yyyy' }} - {{
+                            convocatoria.fecha_fin | date: 'dd/MM/yyyy' }}</span></small></p>
+                      <a *ngIf="convocatoria.archivo_resultado != null" href="{{ convocatoria.archivo_resultado }}"
+                        target="_blank" class="badge badge-success">Haz clic aquí para ver los resultados de la
+                        convocatoria.</a>
 
-                    <div class="progress my-4" style="height: 1px;">
-                      <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress my-4" style="height: 1px;">
+                        <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="25"
+                          aria-valuemin="0" aria-valuemax="100">
+                        </div>
                       </div>
                     </div>
+                    <ng-template #inactivo>
+                      <!-- Código que se mostrará si convocatoria.activo es falso -->
+                      <p class="text-danger">No hay convocatorias vigentes.</p>
+                  </ng-template>
                   </div>
                 </div>
               </div>
