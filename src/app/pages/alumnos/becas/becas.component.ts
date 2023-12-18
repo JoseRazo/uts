@@ -22,4 +22,8 @@ export class BecasComponent implements OnInit {
     });
   }
 
+  hasActiveConvocatorias(convocatorias: any[]): boolean {
+    return convocatorias.some(convocatoria => convocatoria.activo);
+  }
+
 }

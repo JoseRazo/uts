@@ -49,7 +49,7 @@
               <div class="mb-4" *ngFor="let beca of institucion.becas">
                 <h5>{{ beca.nombre }}</h5>
                 <div [innerHTML]="beca.descripcion"></div>
-                <div *ngIf="beca.convocatorias.length !== 0">
+                <div *ngIf="beca.convocatorias && beca.convocatorias.length > 0 && hasActiveConvocatorias(beca.convocatorias)">
                   <p class="font-weight-bold mt-2">Convocatorias</p>
                   <div *ngFor="let convocatoria of beca.convocatorias">
                     <div *ngIf="convocatoria.activo; else inactivo">
