@@ -111,3 +111,8 @@ lo ponemos en la vista de principal */
 $(document).ready(function () {
     $('#contador').load('https://www.utsalamanca.edu.mx/assets/contador_visitas/uts/index.php');
 });
+
+
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});

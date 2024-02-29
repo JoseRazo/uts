@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { VacanteService } from 'src/app/services/bolsa-trabajo-uts/vacante.service';
+import { Vacante } from 'src/app/services/bolsa-trabajo-uts/vacante.interfaces';
 
 @Component({
   selector: 'app-bolsa-trabajo-uts',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BolsaTrabajoUtsComponent implements OnInit {
 
-  constructor() { }
+  vacantes: Vacante[] = [];
 
-  ngOnInit() {
+  constructor(private vacanteService: VacanteService) { }
+
+  ngOnInit(): void {
+    console.log(this.vacantes);
+    this.getVacantes();
+  }
+
+  getVacantes(): void {
+    this.vacanteService.getVacantes().subscribe(vacantes => this.vacantes = vacantes);
   }
 
 }

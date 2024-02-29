@@ -1,3 +1,19 @@
 img {
     width: auto
 }
+.cssbuttons-io-button {
+  width: max-content;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  border-radius: 20em;
+}
+
+.cssbuttons-io-button svg {
+  margin-right: 8px;
+}
+
+.cssbuttons-io-button:hover {
+  border-color: white;
+  box-shadow: 0 0.5em 1.5em -0.5em #007CF2;
+}

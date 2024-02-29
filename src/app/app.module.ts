@@ -81,6 +81,7 @@ import { DirectorioCjmuComponent } from './pages/universidad/directorio-cjmu/dir
 import { HorariosCursoNivelacionComponent } from './pages/alumnos/horarios-curso-nivelacion/horarios-curso-nivelacion.component';
 import { DetalleNoticiaComponent } from './pages/noticias/detalle-noticia/detalle-noticia.component';
 import { NoticiasDestacadasComponent } from './pages/noticias/noticias-destacadas/noticias-destacadas.component';
+import { VacantesFiltroPipe } from './services/bolsa-trabajo-uts/vacantes-filtro.pipe';
 
 @NgModule({
   declarations: [
@@ -160,6 +161,7 @@ import { NoticiasDestacadasComponent } from './pages/noticias/noticias-destacada
     HorariosCursoNivelacionComponent,
     DetalleNoticiaComponent,
     NoticiasDestacadasComponent,
+    VacantesFiltroPipe
 
   ],
   imports: [
