@@ -82,6 +82,7 @@ import { HorariosCursoNivelacionComponent } from './pages/alumnos/horarios-curso
 import { DetalleNoticiaComponent } from './pages/noticias/detalle-noticia/detalle-noticia.component';
 import { NoticiasDestacadasComponent } from './pages/noticias/noticias-destacadas/noticias-destacadas.component';
 import { VacantesFiltroPipe } from './services/bolsa-trabajo-uts/vacantes-filtro.pipe';
+import { ListadoOficialComponent } from './pages/alumnos/listado-oficial/listado-oficial.component';
 
 @NgModule({
   declarations: [
@@ -161,7 +162,8 @@ import { VacantesFiltroPipe } from './services/bolsa-trabajo-uts/vacantes-filtro
     HorariosCursoNivelacionComponent,
     DetalleNoticiaComponent,
     NoticiasDestacadasComponent,
-    VacantesFiltroPipe
+    VacantesFiltroPipe,
+    ListadoOficialComponent
 
   ],
   imports: [
@@ -302,6 +304,10 @@ import { VacantesFiltroPipe } from './services/bolsa-trabajo-uts/vacantes-filtro
       {
         path: 'tramites-internos',
         component: TramitesInternosComponent
+      },
+      {
+        path: 'listados-oficiales',
+        component: ListadoOficialComponent
       },
       //VINCULACION
       {
