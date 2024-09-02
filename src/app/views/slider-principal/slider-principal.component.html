@@ -9,10 +9,23 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
     </ol>
 
     <div class="carousel-inner">
         <div class="carousel-item animate__animated animate__fadeInBottomLeft active">
+            <a (click)="openDocuments($event)">
+                <img src="assets/img/pagina-principal/banner-seguro-estudiantil.png"
+                    alt="Seguro facultativo y Seguro contra accidentes" title="Haz clic aquí para ver más información.">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <a href="assets/content/seguro-facultativo/Seguro_ALUMNOS_contra_accidentes.pdf" target="_blank" class="btn btn-info mb-2 btn-sm">Seguro Contra Accidentes</a>
+                    <a href="assets/content/seguro-facultativo/AVISO_DE_ACCIDENTE_PREVEM_(002).pdf" target="_blank" class="btn btn-info btn-sm">Aviso de Accidente o Enfermedad</a>
+                  </div>
+            </div>
+        </div>
+        <div class="carousel-item animate__animated animate__fadeInBottomLeft">
             <a href="https://agua.guanajuato.gob.mx/espacioacuoso/" target="_blank">
                 <img src="assets/img/pagina-principal/Banners_espacio_acuoso_2024_1200x402.jpg"
                     alt="Espacio Acuoso 2024" title="Haz clic aquí para participar en Espacio Acuoso 2024.">
