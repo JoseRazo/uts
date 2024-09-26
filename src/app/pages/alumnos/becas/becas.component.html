@@ -52,7 +52,7 @@
                 <div *ngIf="beca.convocatorias && beca.convocatorias.length > 0 && hasActiveConvocatorias(beca.convocatorias)">
                   <p class="font-weight-bold mt-2">Convocatorias</p>
                   <div *ngFor="let convocatoria of beca.convocatorias">
-                    <div *ngIf="convocatoria.activo; else inactivo">
+                    <div *ngIf="convocatoria.activo">
                       <p><a href="{{ convocatoria.archivo_convocatoria }}" target="_blank" rel="noopener noreferrer"><img
                             src="assets/img/iconos/pdf-24_32.png" class="mr-3" alt="Icono pdf."> {{ convocatoria.nombre
                           }}</a></p>
@@ -69,10 +69,6 @@
                         </div>
                       </div>
                     </div>
-                    <ng-template #inactivo>
-                      <!-- Código que se mostrará si convocatoria.activo es falso -->
-                      <p class="text-danger">No hay convocatorias vigentes.</p>
-                  </ng-template>
                   </div>
                 </div>
               </div>
