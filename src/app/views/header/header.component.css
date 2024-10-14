@@ -109,6 +109,24 @@ a:hover.twitter {
     text-decoration: underline;
 }
 
+a.twitterX {
+    float: right;
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 22px;
+    background: url("../../../assets/img/accesibilidad/X-azul.png") 0 0 no-repeat;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+a:hover.twitterX {
+    background-position: -35px 0;
+    background: url("../../../assets/img/accesibilidad/X-verde.png") 0 0 no-repeat;
+    text-decoration: underline;
+}
+
 a.facebook {
     float: right;
     display: block;
