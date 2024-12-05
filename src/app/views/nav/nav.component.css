@@ -1,39 +1,47 @@
-.navbar-default .navbar-nav > li.dropdown:hover > a, 
-.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
-.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+.navbar-default .navbar-nav>li.dropdown:hover>a,
+.navbar-default .navbar-nav>li.dropdown:hover>a:hover,
+.navbar-default .navbar-nav>li.dropdown:hover>a:focus {
     background-color: rgb(231, 231, 231);
     color: rgb(85, 85, 85);
 }
+
 #navbarSupportedContent .dropdown:hover>.dropdown-menu {
-    display: block; 
+    display: block;
     margin: auto
 }
+
 .dropdown-item {
     color: white;
 }
-.dropdown-item:hover{
+
+.dropdown-item:hover {
     background-color: rgb(41, 93, 138);
 }
+
 .bg-nav {
     background-color: #002078;
 }
+
 nav div ul li a:hover {
     background-color: rgb(41, 93, 138);
 }
+
 .navleft-invisible {
     visibility: hidden !important;
     display: none;
 }
+
 @media screen and (max-width: 991px) {
     .navleft-invisible {
         visibility: initial !important;
         display: initial;
     }
-    
+
 }
-@media screen and (max-width:357px){
+
+@media screen and (max-width:357px) {
     .navbar-toggler {
-       padding: .5px;
-       font-size: 1rem;
+        padding: .5px;
+        font-size: 1rem;
     }
 }
