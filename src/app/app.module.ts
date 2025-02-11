@@ -83,6 +83,7 @@ import { DetalleNoticiaComponent } from './pages/noticias/detalle-noticia/detall
 import { NoticiasDestacadasComponent } from './pages/noticias/noticias-destacadas/noticias-destacadas.component';
 import { VacantesFiltroPipe } from './services/bolsa-trabajo-uts/vacantes-filtro.pipe';
 import { ListadoOficialComponent } from './pages/alumnos/listado-oficial/listado-oficial.component';
+import { AdquisicionesComponent } from './pages/transparencia/adquisiciones/adquisiciones.component';
 
 @NgModule({
   declarations: [
@@ -163,7 +164,8 @@ import { ListadoOficialComponent } from './pages/alumnos/listado-oficial/listado
     DetalleNoticiaComponent,
     NoticiasDestacadasComponent,
     VacantesFiltroPipe,
-    ListadoOficialComponent
+    ListadoOficialComponent,
+    AdquisicionesComponent
 
   ],
   imports: [
@@ -401,6 +403,10 @@ import { ListadoOficialComponent } from './pages/alumnos/listado-oficial/listado
       {
         path: 'estados-financieros',
         component: EstadosFinancierosComponent
+      },
+      {
+        path: 'adquisiciones',
+        component: AdquisicionesComponent
       },
 
       {
