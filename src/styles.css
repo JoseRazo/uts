@@ -5160,3 +5160,15 @@ a.scroll-top i {
 
   /* Fin accesibilidad mobil */
 }
+
+.custom-btn {
+  background-color: #2B9762 !important;
+  border-color: #2B9762 !important;
+  color: white !important;
+}
+
+.custom-btn:hover {
+  background-color: #002078 !important;
+  border-color: #002078 !important;
+  color: white !important;
+}

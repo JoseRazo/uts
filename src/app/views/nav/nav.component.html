@@ -1,23 +1,17 @@
 <nav class="navbar navbar-dark navbar-expand-lg navbar-light bg-nav">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span><span style="font-size:12px"> MENÚ PRINCIPAL</span>
+    <span class="navbar-toggler-icon"></span><span style="font-size: 12px"> MENÚ PRINCIPAL</span>
   </button>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLateral"
     aria-controls="navbarLateral" aria-expanded="false" aria-label="Toggle navigation">
-    <span style="font-size:12px">MENÚ LATERAL </span><span class="navbar-toggler-icon"></span>
+    <span style="font-size: 12px">MENÚ LATERAL </span><span class="navbar-toggler-icon"></span>
   </button>
 
   <!-- MENU PRINCIPAL-->
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <!-- <li class="nav-item active">
-        <a class="nav-link" href="/">
-          <i class="fa fa-home fa-lg"></i> Inicio
-          <span class="sr-only">(current)</span>
-        </a>
-      </li> -->
       <li class="nav-item dropdown">
         <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
@@ -38,239 +32,234 @@
           <a class="dropdown-item" routerLink="/reconocimientos">Reconocimientos</a>
         </div>
       </li>
+
       <li class="nav-item dropdown">
         <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
           <i class="fa fa-briefcase fa-lg"></i>
-          Programas Educativos
+          Oferta Educativa
         </a>
-        <div class="text-center dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" routerLink="/cuerpos-academicos">Cuerpos Académicos</a>
           <div class="dropdown-divider"></div>
-      <li class="nav-item dropdown dropright">
-        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Ingeniería/Licenciatura
-        </a>
-        <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" routerLink="/lgch">Licenciatura en Gestión de Capital Humano</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" routerLink="/ier">Ingeniería en Energías Renovables</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" routerLink="/imet">Ingeniería en Mecatrónica</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" routerLink="/ipq">Ingeniería en Procesos Químicos</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" routerLink="/isip">Ingeniería en Sistemas Productivos</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" routerLink="/itea">Ingeniería en Tecnología Ambiental</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" routerLink="/idgs">Ingeniería en Desarrollo y Gestión de Software</a>
+          <li class="nav-item dropdown dropright">
+            <a class="nav-link dropdown-toggle active" style="padding: 0.25rem 1.5rem" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Carreras ING/LIC
+            </a>
+            <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" routerLink="/lad">Licenciatura en Administración con TSU en Gestión del Capital Humano</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" routerLink="/ied">Ingeniería en Energía y Desarrollo Sostenible con TSU en Energía Turbo-Solar</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" routerLink="/ime">Ingeniería Mecatrónica con TSU en Automatización</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" routerLink="/iin">Ingeniería Industrial con TSU en Automotriz</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" routerLink="/iq">Ingeniería Química con TSU en Química Industrial</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" routerLink="/ias">Ingeniería Ambiental y Sustentabilidad con TSU en Gestión Ambiental</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" routerLink="/iti">Ingeniería en Tecnologías de la Información e Innovación Digital con TSU en
+                Desarrollo de Software Multiplataforma</a>
+            </div>
+          </li>
         </div>
       </li>
-      <div class="dropdown-divider"></div>
-      <li class="nav-item dropdown dropright">
-        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+
+      <li class="nav-item dropdown">
+        <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
-          Técnico Superior Universitario (TSU)
+          <i class="fa fa-briefcase fa-lg"></i>
+          Aspirantes
         </a>
         <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" routerLink="/tsuadm">Administración, Área Capital Humano</a>
+          <li class="nav-item dropdown dropright">
+            <a class="nav-link dropdown-toggle active" style="padding: 0.25rem 1.5rem" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Oferta Educativa
+            </a>
+            <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" routerLink="/lad">Licenciatura en Administración con TSU en Gestión del Capital Humano</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" routerLink="/ied">Ingeniería en Energía y Desarrollo Sostenible con TSU en Energía Turbo-Solar</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" routerLink="/ime">Ingeniería Mecatrónica con TSU en Automatización</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" routerLink="/iin">Ingeniería Industrial con TSU en Automotriz</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" routerLink="/iq">Ingeniería Química con TSU en Química Industrial</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" routerLink="/ias">Ingeniería Ambiental y Sustentabilidad con TSU en Gestión Ambiental</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" routerLink="/iti">Ingeniería en Tecnologías de la Información e Innovación Digital con TSU en
+                Desarrollo de Software Multiplataforma</a>
+            </div>
+          </li>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" routerLink="/tsuer">Energías Renovables, Área Calidad y Ahorro de Energía</a>
+          <a class="dropdown-item" 
+          href="https://sito.utsalamanca.edu.mx/jsp/escolar/proceso_admision/proceso_interesado.jsp" 
+          target="_blank">Pre-Registro</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" routerLink="/tsumet">Mecatrónica, Área Automatización</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" routerLink="/tsupia">Procesos Industriales, Área Automotriz</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" routerLink="/tsuqai">Química, Área Industrial</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" routerLink="/tsuqam">Química, Área Tecnología Ambiental</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" routerLink="/tsutis">Tecnologías de la Información, Área Desarrollo de Software
-            Multiplataforma</a>
+          <a class="dropdown-item" href="#">Convenios con IEMS</a>
         </div>
       </li>
-  </div>
-  </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-      aria-expanded="false">
-      <i class="fa fa-users fa-lg"></i>
-      Estudiantes
-    </a>
-    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
 
-      <a class="dropdown-item" routerLink="/becas">Becas</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" routerLink="/calendario-escolar">Calendario Escolar</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" routerLink="/costo-derechos-educativos">Costo de Derechos Educativos</a>
-      <div class="dropdown-divider"></div>
-      <!-- <a class="dropdown-item" href="#">Egresados</a>
-      <div class="dropdown-divider"></div> -->
-      <a class="dropdown-item" href="https://www.utsalamanca.edu.mx/seguimiento/app/web/LoginForm">Examen
-        Psicométrico</a>
-      <div class="dropdown-divider"></div>
-      <!-- <a class="dropdown-item" routerLink="/horarios">Horarios</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" routerLink="/horarios-curso-nivelacion">Horarios Curso de Nivelación</a>
-      <div class="dropdown-divider"></div> -->
+      <li class="nav-item dropdown">
+        <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-user-graduate fa-lg"></i>
+          Estudiantes
+        </a>
+        <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/becas">Becas</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" routerLink="/calendario-escolar">Calendario Escolar</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" routerLink="/costo-derechos-educativos">Costo de Derechos Educativos</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://www.utsalamanca.edu.mx/seguimiento/app/web/LoginForm">Examen Psicométrico</a>
+          <div class="dropdown-divider"></div>
+          <li class="nav-item dropdown dropright">
+            <a style="padding: 0.25rem 1.5rem" class="nav-link dropdown-toggle active" href="#" id="navbarDropdownPlataformas" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plataformas Virtuales
+            </a>
+            <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownPlataformas">
+              <a class="dropdown-item" href="https://sito.utsalamanca.edu.mx/" target="_blank">SITO</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://elibro.net/es/lc/utsalamanca/login_usuario/?next=/es/lc/utsalamanca/inicio" target="_blank">Biblioteca Virtual</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://www.conricyt.mx/" target="_blank">Biblioteca CONRICyT</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://login.microsoftonline.com/login.srf?wa=wsignin1.0&rpsnv=4&ct=1493127522&rver=6.7.6640.0&wp=MCMBI&wreply=https%3a%2f%2fportal.office.com%2flanding.aspx%3ftarget%3d%252fdefault.aspx&lc=2058&id=501392&msafed=0&client-request-id=3a1c0327-1890-4cde-9f92-0f049d3f4255" target="_blank">Correo Institucional</a>
+            </div>
+          </li>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" routerLink="/resultados-examen-admision">Resultados de Exámenes de Admisión</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="assets/content/seguro-facultativo/Seguro-Facultativo.pdf" target="_blank">Aseguramiento Escolar</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" routerLink="/tramites-internos">Trámites Internos</a>
+        </div>
+      </li>    
 
-  <li class="nav-item dropdown dropright">
-    <a style="padding: .25rem 1.5rem;" class="nav-link dropdown-toggle active" href="#" id="navbarDropdown"
-      role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Plataformas Virtuales
-    </a>
-    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" href="https://sito.utsalamanca.edu.mx/" target="_blank">SITO</a>
-      <div class="dropdown-divider"></div>
-      <!--
-      <a class="dropdown-item" href="https://virtual.utsalamanca.edu.mx/moodle/" target="_blank">Sitio Virtual MOODLE</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="https://idiomas.utsalamanca.edu.mx/moodle/" target="_blank">Sitio Virtual de Idiomas
-        MOODLE</a>
-      <div class="dropdown-divider"></div>
-      -->
-      <a class="dropdown-item" href="https://elibro.net/es/lc/utsalamanca/login_usuario/?next=/es/lc/utsalamanca/inicio"
-        target="_blank">Biblioteca Virtual</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="https://www.conricyt.mx/" target="_blank">Biblioteca CONRICyT</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item"
-        href="https://login.microsoftonline.com/login.srf?wa=wsignin1.0&rpsnv=4&ct=1493127522&rver=6.7.6640.0&wp=MCMBI&wreply=https%3a%2f%2fportal.office.com%2flanding.aspx%3ftarget%3d%252fdefault.aspx&lc=2058&id=501392&msafed=0&client-request-id=3a1c0327-1890-4cde-9f92-0f049d3f4255"
-        target="_blank">Correo Institucional</a>
-    </div>
-  </li>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" routerLink="/resultados-examen-admision">Resultados de Exámenes de Admisión</a>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" href="assets/content/seguro-facultativo/Seguro-Facultativo.pdf" target="_blank">Aseguramiento
-    Escolar</a>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" routerLink="/tramites-internos">Trámites Internos</a>
-  </div>
-  </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-      aria-expanded="false">
-      <i class="fa fa-link fa-lg"></i>
-      Vinculación
-    </a>
-    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" routerLink="/actividades-culturales-deportivas">Actividades Culturales y Deportivas</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="/bolsa-trabajo">Bolsa de Empleo</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" routerLink="/cele">Centro de Lenguas</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" routerLink="/conocer">CONOCER</a>
-      <div class="dropdown-divider"></div>
-  <li class="nav-item dropdown dropright">
-    <a style="padding: .25rem 1.5rem;" class="nav-link dropdown-toggle active" href="#" id="navbarDropdown"
-      role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Convenios
-    </a>
-    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" routerLink="/convenios-cooperacion">Convenios de Cooperación</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" routerLink="/movilidad-estudiantil">Movilidad Estudiantil y Docente</a>
-    </div>
-  </li>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" routerLink="/educacion-continua">Educación Continua</a>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" routerLink="/emprendimiento">Emprendimiento</a>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" routerLink="/estadias">Estadía</a>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" routerLink="/servicios-medicos">Servicios Médicos</a>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" routerLink="/servicios-tecnologicos">Servicios Tecnológicos</a>
-  </div>
-  </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-      aria-expanded="false">
-      <i class="fa fa-bar-chart fa-lg"></i>
-      Gestión
-    </a>
-    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" routerLink="/bolsa-trabajo-uts">Bolsa de Trabajo de la UTS</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="https://consejo.utsalamanca.edu.mx" target="_blank">Consejo Directivo</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="https://sito.utsalamanca.edu.mx/" target="_blank">Encuestas Alumnos</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="assets/content/estructura-organica/Estructura_Organica_B_acualizada_06.02.2019.pdf"
-        target="_blank">Estructura Orgánica</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Presupuesto</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" routerLink="/responsabilidad-social">Responsabilidad Social en la UTS</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="https://sgc.utsalamanca.edu.mx/" target="_blank">Sistema de Gestión de Calidad</a>
-    </div>
-  </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-      aria-expanded="false">
-      <i class="fa fa-hourglass-start fa-lg"></i>
-      Transparencia
-    </a>
-    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" routerLink="/archivistica">Archivística</a>
-      <div class="dropdown-divider"></div>
-  <li class="nav-item dropdown dropright">
-    <a style="padding: .25rem 1.5rem;" class="nav-link dropdown-toggle active" href="#" id="navbarDropdown"
-      role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Aviso de Privacidad
-    </a>
-    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" href="assets/content/avisos-privacidad/Aviso_de_Privacidad_Simplificado_19.10.2022.pdf"
-        target="_blank">Simplificado</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="assets/content/avisos-privacidad/Aviso_de_Privacidad_Integrado_19.10.2022.pdf"
-        target="_blank">Integral</a>
-    </div>
-  </li>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" routerLink="/buzon">Buzón de Quejas y Sugerencias</a>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" routerLink="/comite-control-interno">Comité de Control Interno</a>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" routerLink="/igualdad-laboral">Comité de Igualdad Laboral y No Discriminación</a>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" routerLink="/contraloria-social">Contraloría Social</a>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" href="http://portaldgi.guanajuato.gob.mx/CuentaPublica/public/main" target="_blank">Cuenta
-    Pública</a>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" routerLink="/estados-financieros">Estados Financieros</a>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" routerLink="/adquisiciones">Prog. Anual Adquisiciones</a>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" href="#">Fondos Federales No Regularizables</a>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" routerLink="/normateca">Normateca</a>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" routerLink="/normativa">Normativa</a>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" routerLink="/politicas">Políticas</a>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" href="https://transparencia.guanajuato.gob.mx/" target="_blank">Portal de Transparencia</a>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item"
-    href="https://transparencia.guanajuato.gob.mx/transparencia/informacion_publica_tabulador.php"
-    target="_blank">Tabulador de Sueldos</a>
-  </div>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link active" routerLink="/contacto">
-      <i class="fa fa-comments fa-lg"></i>
-      Contacto</a>
-  </li>
-  </ul>
+      <li class="nav-item dropdown">
+        <a class="nav-link active" href="#" id="navbarVinculacion" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-link fa-lg"></i>
+            Vinculación
+        </a>
+        <div class="dropdown-menu bg-primary" aria-labelledby="navbarVinculacion">
+            <a class="dropdown-item" routerLink="/actividades-culturales-deportivas">Actividades Culturales y Deportivas</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/bolsa-trabajo">Bolsa de Empleo</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" routerLink="/cele">Centro de Lenguas</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" routerLink="/conocer">CONOCER</a>
+            <div class="dropdown-divider"></div>
+    
+            <li class="nav-item dropdown dropright">
+                <a style="padding: 0.25rem 1.5rem" class="nav-link dropdown-toggle active" href="#" id="navbarConvenios" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Convenios
+                </a>
+                <div class="dropdown-menu bg-primary" aria-labelledby="navbarConvenios">
+                    <a class="dropdown-item" routerLink="/convenios-cooperacion">Convenios de Cooperación</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" routerLink="/movilidad-estudiantil">Movilidad Estudiantil y Docente</a>
+                </div>
+            </li>
+    
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" routerLink="/educacion-continua">Educación Continua</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" routerLink="/emprendimiento">Emprendimiento</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" routerLink="/estadias">Estadía</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" routerLink="/servicios-medicos">Servicios Médicos</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" routerLink="/servicios-tecnologicos">Servicios Tecnológicos</a>
+        </div>
+      </li>    
+
+      <li class="nav-item dropdown">
+        <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <i class="fa fa-bar-chart fa-lg"></i>
+          Gestión
+        </a>
+        <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/bolsa-trabajo-uts">Bolsa de Trabajo de la UTS</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://consejo.utsalamanca.edu.mx" target="_blank">Consejo Directivo</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://sito.utsalamanca.edu.mx/" target="_blank">Encuestas Alumnos</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="assets/content/estructura-organica/Estructura_Organica_B_acualizada_06.02.2019.pdf"
+            target="_blank">Estructura Orgánica</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Presupuesto</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" routerLink="/responsabilidad-social">Responsabilidad Social en la UTS</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://sgc.utsalamanca.edu.mx/" target="_blank">Sistema de Gestión de Calidad</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link active" href="#" id="navbarTransparencia" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-hourglass-start fa-lg"></i>
+            Transparencia
+        </a>
+        <div class="dropdown-menu bg-primary" aria-labelledby="navbarTransparencia">
+            <a class="dropdown-item" routerLink="/archivistica">Archivística</a>
+            <div class="dropdown-divider"></div>
+    
+            <li class="nav-item dropdown dropright">
+                <a style="padding: 0.25rem 1.5rem" class="nav-link dropdown-toggle active" href="#" id="navbarAvisoPrivacidad" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Aviso de Privacidad
+                </a>
+                <div class="dropdown-menu bg-primary" aria-labelledby="navbarAvisoPrivacidad">
+                    <a class="dropdown-item" href="assets/content/avisos-privacidad/Aviso_de_Privacidad_Simplificado_19.10.2022.pdf" target="_blank">Simplificado</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="assets/content/avisos-privacidad/Aviso_de_Privacidad_Integrado_19.10.2022.pdf" target="_blank">Integral</a>
+                </div>
+            </li>
+    
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" routerLink="/buzon">Buzón de Quejas y Sugerencias</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" routerLink="/comite-control-interno">Comité de Control Interno</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" routerLink="/igualdad-laboral">Comité de Igualdad Laboral y No Discriminación</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" routerLink="/contraloria-social">Contraloría Social</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="http://portaldgi.guanajuato.gob.mx/CuentaPublica/public/main" target="_blank">Cuenta Pública</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" routerLink="/estados-financieros">Estados Financieros</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" routerLink="/adquisiciones">Prog. Anual Adquisiciones</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Fondos Federales No Regularizables</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" routerLink="/normateca">Normateca</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" routerLink="/normativa">Normativa</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" routerLink="/politicas">Políticas</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="https://transparencia.guanajuato.gob.mx/" target="_blank">Portal de Transparencia</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="https://transparencia.guanajuato.gob.mx/transparencia/informacion_publica_tabulador.php" target="_blank">Tabulador de Sueldos</a>
+        </div>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link active" routerLink="/contacto">
+          <i class="fa fa-comments fa-lg"></i>
+          Contacto</a>
+      </li>
+    </ul>
   </div>
 
   <!--MENU LATERAL-->
@@ -316,7 +305,8 @@
           <div class="dropdown-divider"></div>
           <a class="dropdown-item"
             href="https://forms.office.com/Pages/ResponsePage.aspx?id=p3Sd7wHUeka6xL38qUZkDAJvmaGrYVxDshykQjnQ73pUM0hCWjc0MzkxTE9HSTE5Ulk4S1JUNklTMS4u"
-            target="_blank"> REDIC007-A MET</a>
+            target="_blank">
+            REDIC007-A MET</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item"
             href="https://forms.office.com/Pages/ResponsePage.aspx?id=p3Sd7wHUeka6xL38qUZkDAJvmaGrYVxDshykQjnQ73pUOE4xMkZUMkZCNEpJUTJHRlhUMDRUTFFaTy4u"
@@ -365,7 +355,6 @@
             10° Cuatrimestre
           </a>
         </div>
-
       </li>
       <!-- <li class="nav-item dropdown dropleft">
         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -400,8 +389,7 @@
           Pago de Servicios
         </a>
         <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="https://pagos.utsalamanca.edu.mx" target="_blank">Referencia
-            Bancaria UTS</a>
+          <a class="dropdown-item" href="https://pagos.utsalamanca.edu.mx" target="_blank">Referencia Bancaria UTS</a>
         </div>
       </li>
 
@@ -486,15 +474,19 @@
         <div class="alert alert-danger text-center" role="alert">
           <h5>Sitio Virtual</h5>
           <a href="https://virtual.utsalamanca.edu.mx/moodle/" target="_blank"><button type="button"
-              class="btn btn-outline-danger btn-block">Ingresar</button></a>
+              class="btn btn-outline-danger btn-block">
+              Ingresar
+            </button></a>
         </div>
-        <div class="progress mb-2" style="height: 1px;"></div>
+        <div class="progress mb-2" style="height: 1px"></div>
         <div class="alert alert-danger text-center" role="alert">
           <h5>Sitio Virtual de Idiomas</h5>
           <a href="https://idiomas.utsalamanca.edu.mx/moodle/" target="_blank"><button type="button"
-              class="btn btn-outline-danger btn-block">Ingresar</button></a>
+              class="btn btn-outline-danger btn-block">
+              Ingresar
+            </button></a>
         </div>
-        <div class="progress mb-2" style="height: 1px;"></div>
+        <div class="progress mb-2" style="height: 1px"></div>
       </div>
     </div>
   </div>

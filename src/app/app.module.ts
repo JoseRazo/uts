@@ -85,6 +85,13 @@ import { VacantesFiltroPipe } from './services/bolsa-trabajo-uts/vacantes-filtro
 import { ListadoOficialComponent } from './pages/alumnos/listado-oficial/listado-oficial.component';
 import { AdquisicionesComponent } from './pages/transparencia/adquisiciones/adquisiciones.component';
 import { Info2024Component } from './pages/transparencia/estados-financieros/info2024/info2024.component';
+import { ItiComponent } from './pages/carreras/iti/iti.component';
+import { IedComponent } from './pages/carreras/ied/ied.component';
+import { ImeComponent } from './pages/carreras/ime/ime.component';
+import { IqComponent } from './pages/carreras/iq/iq.component';
+import { IinComponent } from './pages/carreras/iin/iin.component';
+import { IasComponent } from './pages/carreras/ias/ias.component';
+import { LadComponent } from './pages/carreras/lad/lad.component';
 
 @NgModule({
   declarations: [
@@ -168,6 +175,13 @@ import { Info2024Component } from './pages/transparencia/estados-financieros/inf
     ListadoOficialComponent,
     AdquisicionesComponent,
     Info2024Component,
+    ItiComponent,
+    IedComponent,
+    ImeComponent,
+    IqComponent,
+    IinComponent,
+    IasComponent,
+    LadComponent,
 
   ],
   imports: [
@@ -275,6 +289,34 @@ import { Info2024Component } from './pages/transparencia/estados-financieros/inf
       {
         path: 'tsutis',
         component: TsutisComponent
+      },
+      {
+        path: 'lad',
+        component: LadComponent
+      },
+      {
+        path: 'ied',
+        component: IedComponent
+      },
+      {
+        path: 'ime',
+        component: ImeComponent
+      },
+      {
+        path: 'iin',
+        component: IinComponent
+      },
+      {
+        path: 'iq',
+        component: IqComponent
+      },
+      {
+        path: 'ias',
+        component: IasComponent
+      },
+      {
+        path: 'iti',
+        component: ItiComponent
       },
       //ALUMNOS UTS
       {
