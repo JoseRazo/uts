@@ -45,3 +45,11 @@ nav div ul li a:hover {
         font-size: 1rem;
     }
 }
+
+@media (min-width: 992px) { /* Se aplicará en pantallas SM (576px) en adelante */
+    .dropdown-menu-custom {
+      min-width: 350px;
+      max-width: 400px;
+    }
+  }
+  
