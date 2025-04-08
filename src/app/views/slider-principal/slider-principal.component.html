@@ -1,99 +1,26 @@
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+        <li *ngFor="let item of carouselItems; let i = index" [attr.data-target]="'#carouselExampleIndicators'"
+            [attr.data-slide-to]="i" [class.active]="i === 0"></li>
     </ol>
 
     <div class="carousel-inner">
-        <div class="carousel-item animate__animated animate__backInDown active">
-            <a href="https://sito.utsalamanca.edu.mx/jsp/escolar/proceso_admision/proceso_interesado.jsp" target="_blank">
-                <img src="assets/img/pagina-principal/Slider-Fichas-Primer-Periodo-2025.png"
-                    alt="Estudia tu carrera profesional en la UTS" title="Estudia tu carrera profesional en la UTS">
-            </a>
-        </div>
-        <div class="carousel-item animate__animated animate__rollIn">
-            <a href="https://sito.utsalamanca.edu.mx/jsp/escolar/proceso_admision/proceso_interesado.jsp" target="_blank">
-                <img src="assets/img/pagina-principal/Slider-Vespertino-2025.png"
-                    alt="Ahora puedes estudiar el turno vespertino en la UTS" title="Ahora puedes estudiar el turno vespertino en la UTS">
-            </a>
-        </div>
-        <div class="carousel-item animate__animated animate__fadeInBottomLeft">
-            <a href="assets/content/comite-control-interno/Codigo_de_Conducta_de_la_UTS.pdf" target="_blank">
-                <img src="assets/img/pagina-principal/Comite-Igualdad-laboral-2025.png"
-                    alt="Comité de Igualdad Laboral y No Discriminación" title="Comité de Igualdad Laboral y No Discriminación">
-            </a>
-        </div>
-        <div class="carousel-item animate__animated animate__bounceInUp">
-            <a href="#" target="_blank">
-                <img src="assets/img/pagina-principal/Comite-Contraloria-Social-2025.png"
-                    alt="Comité de Contraloría Social." title="Comité de Contraloría Social.">
-            </a>
-        </div>
-        <div class="carousel-item animate__animated animate__fadeInBottomLeft">
-            <a (click)="openDocumentsContraloria($event)">
-                <img src="assets/img/pagina-principal/logo-contraloria-socialf-01.jpg"
-                    alt="Contraloria Social" title="Haz clic aquí para ver más información.">
-            </a>
-            <div class="carousel-caption d-none d-md-block">
-                <div class="d-grid gap-2 col-6 mx-auto">
-                    <a href="assets/content/contraloria-social/Convocatoria-CS-U006-2024.pdf" target="_blank" class="btn btn-outline-danger btn-sm mr-2 mb-md-2 mb-lg-0">Ver Convocatoria</a>
-                    <a href="assets/content/contraloria-social/TRIPTICO-CS-U006-24.pdf" target="_blank" class="btn btn-outline-danger btn-sm">Ver Triptico</a>
-                  </div>
-            </div>
-        </div>
-        <div class="carousel-item animate__animated animate__fadeInBottomLeft">
-            <a href="assets/content/normateca/Capacitacion-Comite-de-Etica-y-Prevencion-de-Conflictos-de-Interes.pptx" target="_blank">
-                <img src="assets/img/pagina-principal/banner-Comite-Interno-de-Etica-WEB.png"
-                    alt="Comité de Ética y Prevención de Conflictos de Interés" title="Comité de Ética y Prevención de Conflictos de Interés">
-            </a>
-        </div>
-        <div class="carousel-item animate__animated animate__backInDown">
-            <a href="assets/content/rectoria/Semblanza-Mtro-Alfonso-Delgado-Martinez.pdf" target="_blank">
-                <img src="assets/img/pagina-principal/Banner-Semblanza.png"
-                    alt="Semblanza Maestro Alfonso Delgado Martinez" title="Semblanza Maestro Alfonso Delgado Martinez">
-            </a>
-        </div>
-        <div class="carousel-item animate__animated animate__fadeInBottomLeft">
-            <a (click)="openDocuments($event)">
-                <img src="assets/img/pagina-principal/banner-seguro-estudiantil.png"
-                    alt="Seguro facultativo y Seguro contra accidentes" title="Haz clic aquí para ver más información.">
-            </a>
-            <div class="carousel-caption d-none d-md-block">
-                <div class="d-grid gap-2 col-6 mx-auto">
-                    <a href="assets/content/seguro-facultativo/Seguro_ALUMNOS_contra_accidentes.pdf" target="_blank" class="btn btn-info mb-2 btn-sm">Seguro Contra Accidentes</a>
-                    <a href="assets/content/seguro-facultativo/AVISO_DE_ACCIDENTE_PREVEM_(002).pdf" target="_blank" class="btn btn-info btn-sm">Aviso de Accidente o Enfermedad</a>
-                  </div>
-            </div>
-        </div>
-        <div class="carousel-item animate__animated animate__zoomIn">
-            <a routerLink="/igualdad-laboral">
-                <img src="assets/img/pagina-principal/banner_igualdad_laboral.png"
-                    alt="Igualdad Laboral y NO Discriminación" title="Igualdad Laboral y NO Discriminación">
-            </a>
-        </div>
+        <div *ngFor="let item of carouselItems; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}"
+            class="animate__animated animate__backInDown">
 
-        <div class="carousel-item animate__animated animate__jackInTheBox">
-            <a href="assets/content/informacion-importante/Acceso_a_Biblioteca_Digital.pdf" target="_blank">
-                <img src="assets/img/pagina-principal/Biblioteca-Banner-Web.png" alt="Biblioteca Digital"
-                    title="Haz clic para ver más información">
+            <a *ngIf="item.url" [href]="item.url" [target]="item.target">
+                <img [src]="item.imagen" [alt]="item.nombre" [title]="item.nombre">
             </a>
-        </div>
-        <div class="carousel-item animate__animated animate__rollIn">
-            <a routerLink="/buzon">
-                <img src="assets/img/pagina-principal/banner-buzon-quejas-sugerencias.png" alt="BUZÓN"
-                    title="Buzón Electrónico de Quejas y Sugerencias">
+
+            <a *ngIf="!item.url && item.archivos.length > 0" (click)="abrirArchivos(item.archivos, $event)" 
+                [target]="item.target" style="cursor: pointer;">
+                <img [src]="item.imagen" [alt]="item.nombre" [title]="item.nombre">
             </a>
+
+            <img [src]="item.imagen" [alt]="item.nombre" [title]="item.nombre" *ngIf="!item.url && item.archivos.length === 0">          
         </div>
     </div>
+
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CarouselPrincipalService } from 'src/app/services/carousel-principal/carousel-principal.service';
+import { CarouselItem } from 'src/app/services/carousel-principal/carousel-principal.interfaces';
 
 @Component({
   selector: 'app-slider-principal',
@@ -7,21 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SliderPrincipalComponent implements OnInit {
 
-  constructor() { }
+  carouselItems: CarouselItem[] = [];
+
+  constructor(private carouselPrincipalService: CarouselPrincipalService ) { }
 
   ngOnInit() {
+    this.getCarouselItems();
   }
 
-  openDocuments(event: Event): void {
-    event.preventDefault();
-    window.open('assets/content/seguro-facultativo/Seguro_ALUMNOS_contra_accidentes.pdf', '_blank');
-    window.open('assets/content/seguro-facultativo/AVISO_DE_ACCIDENTE_PREVEM_(002).pdf', '_blank');
+  getCarouselItems(): void {
+    this.carouselPrincipalService.getCarouselItems().subscribe(carouselItems => {
+      this.carouselItems = carouselItems;
+      console.log('Carousel items cargados:', this.carouselItems); // <- Aquí sí se verá
+    });
   }
+  
 
-  openDocumentsContraloria(event: Event): void {
+  abrirArchivos(archivos: any[], event: Event): void {
     event.preventDefault();
-    window.open('assets/content/contraloria-social/Convocatoria-CS-U006-2024.pdf', '_blank');
-    window.open('assets/content/contraloria-social/TRIPTICO-CS-U006-24.pdf', '_blank');
+    archivos.forEach(archivo => {
+      window.open(archivo.archivo, '_blank');
+    });
   }
 
 }
