@@ -92,6 +92,7 @@ import { IqComponent } from './pages/carreras/iq/iq.component';
 import { IinComponent } from './pages/carreras/iin/iin.component';
 import { IasComponent } from './pages/carreras/ias/ias.component';
 import { LadComponent } from './pages/carreras/lad/lad.component';
+import { ConveniosComponent } from './pages/aspirantes/convenios/convenios.component';
 
 @NgModule({
   declarations: [
@@ -182,6 +183,7 @@ import { LadComponent } from './pages/carreras/lad/lad.component';
     IinComponent,
     IasComponent,
     LadComponent,
+    ConveniosComponent,
 
   ],
   imports: [
@@ -317,6 +319,11 @@ import { LadComponent } from './pages/carreras/lad/lad.component';
       {
         path: 'iti',
         component: ItiComponent
+      },
+      //ASPIRANTES
+      {
+        path: 'convenios',
+        component: ConveniosComponent
       },
       //ALUMNOS UTS
       {
