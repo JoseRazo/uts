@@ -93,6 +93,7 @@ import { IinComponent } from './pages/carreras/iin/iin.component';
 import { IasComponent } from './pages/carreras/ias/ias.component';
 import { LadComponent } from './pages/carreras/lad/lad.component';
 import { ConveniosComponent } from './pages/aspirantes/convenios/convenios.component';
+import { Info2025Component } from './pages/transparencia/estados-financieros/info2025/info2025.component';
 
 @NgModule({
   declarations: [
@@ -184,6 +185,7 @@ import { ConveniosComponent } from './pages/aspirantes/convenios/convenios.compo
     IasComponent,
     LadComponent,
     ConveniosComponent,
+    Info2025Component,
 
   ],
   imports: [
