@@ -94,6 +94,7 @@ import { IasComponent } from './pages/carreras/ias/ias.component';
 import { LadComponent } from './pages/carreras/lad/lad.component';
 import { ConveniosComponent } from './pages/aspirantes/convenios/convenios.component';
 import { Info2025Component } from './pages/transparencia/estados-financieros/info2025/info2025.component';
+import { VinculacionExtensionUniversitariaComponent } from './pages/vinculacion/vinculacion-extension-universitaria/vinculacion-extension-universitaria.component';
 
 @NgModule({
   declarations: [
@@ -186,6 +187,7 @@ import { Info2025Component } from './pages/transparencia/estados-financieros/inf
     LadComponent,
     ConveniosComponent,
     Info2025Component,
+    VinculacionExtensionUniversitariaComponent,
 
   ],
   imports: [
@@ -409,7 +411,10 @@ import { Info2025Component } from './pages/transparencia/estados-financieros/inf
         path: 'servicios-tecnologicos',
         component: ServiciosTecnologicosComponent
       },
-
+      {
+        path: 'vinculacion-extension-universitaria',
+        component: VinculacionExtensionUniversitariaComponent
+      },
 
       //GESTION
       {
