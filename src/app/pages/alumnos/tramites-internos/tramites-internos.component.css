@@ -2,28 +2,85 @@ img {
     width: auto
 }
 
-.mb {
-    margin-bottom: 3rem
+.panel.panel-default {
+    margin-top: 20px;
 }
-.list-group-item {
-    border: none
+.panel-group .panel {
+    margin-bottom: 0;
+    overflow: hidden;
+    border-radius: 4px;
 }
-.flex-column {
-    border-top: 1px solid gray;
-    border-left: 1px solid gray;
-    border-bottom: 1px solid gray
+.panel-default {
+    border-color: #ddd;
+    border: 1px solid #ddd;
 }
-.nav-pills .nav-link {
-    border-radius: 0;
-}
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    color: #fff;
-    background-color: #990000;
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
 }
 
-@media screen and (max-width: 767px) {
-    .flex-column {
-        border-right: 1px solid gray;
-        border-bottom: 0
-    }
+.panel-default > .panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+.panel-group .panel-heading {
+    border-bottom: 0;
+        border-bottom-color: currentcolor;
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+h4.panel-title {
+    position: relative;
+    padding-left: 30px;
+}
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+.panel-title > a {
+    color: inherit;
+}
+
+h4.panel-title a::before {
+    content: "\f056";
+}
+
+h4.panel-title a.collapsed::before {
+    content: "\f055";
+}
+h4.panel-title a::before, h4.panel-title a.collapsed::before {
+    font-family: FontAwesome;
+    position: absolute;
+    z-index: 0;
+    font-size: 16px;
+    left: 0;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+.panel-default > .panel-heading + .panel-collapse .panel-body {
+    border-top-color: #ddd;
+}
+.panel-group .panel-heading + .panel-collapse .panel-body {
+    border-top: 1px solid #ddd;
+        border-top-color: rgb(221, 221, 221);
+}
+.panel-body {
+    padding: 15px;
 }

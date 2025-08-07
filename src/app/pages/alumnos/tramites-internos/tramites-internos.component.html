@@ -28,199 +28,278 @@
 <main id="tramites-internos">
   <div class="row">
     <div class="col-md-9 text-justify mb-4">
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" id="aspirantes-tab" data-toggle="tab" href="#aspirantes" role="tab"
-            aria-controls="aspirantes" aria-selected="true">Aspirantes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="bajas-tab" data-toggle="tab" href="#bajas" role="tab" aria-controls="bajas"
-            aria-selected="false">Bajas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="equivalencias-tab" data-toggle="tab" href="#equivalencias" role="tab"
-            aria-controls="equivalencias" aria-selected="false">Equivalencias</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="reingresos-tab" data-toggle="tab" href="#reingresos" role="tab"
-            aria-controls="reingresos" aria-selected="false">Reingresos o Altas Intermedias</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="reinscripcion-tab" data-toggle="tab" href="#reinscripcion" role="tab"
-            aria-controls="reinscripcion" aria-selected="false">Reinscripción</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="solicitud-tab" data-toggle="tab" href="#solicitud" role="tab"
-            aria-controls="solicitud" aria-selected="false">Solicitud de Referencia</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="titulacion-tab" data-toggle="tab" href="#titulacion" role="tab"
-            aria-controls="titulacion" aria-selected="false">Titulación</a>
-        </li>
-      </ul>
-      <div class="tab-content mt-3" id="myTabContent">
-        <!--Aspirantes-->
-        <div class="tab-pane fade show active" id="aspirantes" role="tabpanel" aria-labelledby="aspirantes-tab">
-          <div class="mt-4">
-            <img src="assets/img/iconos/pdf-24_32.png" />
-            <a href="assets/content/tramites-internos/REQUISITOS_DE_PREINSCRIPCION_GEN_17.0_DE_TSU_SEPTIEMBRE_DICIEMBRE_2025.pdf"
-              target="_blank">REQUISITOS PARA LA PREINSCRIPCIÓN GENERACIÓN 17.0 DE TÉCNICO SUPERIOR UNIVERSITARIO SEPTIEMBRE - DICIEMBRE 2025</a>
+      <div class="panel-group mt-5" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a
+                data-toggle="collapse"
+                class="collapsed"
+                data-parent="#accordion"
+                href="#collapseOne"
+                >Aspirantes</a
+              >
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="mt-4">
+                <img src="assets/img/iconos/pdf-24_32.png" />
+                <a
+                  href="assets/content/tramites-internos/REESC018-D-REQUISITOS-DE-INSCRIPCION-ING-LIC-GEN-15.0.pdf"
+                  target="_blank"
+                  >RREQUISITOS DE INSCRIPCIÓN GENERACIÓN 15.0 DE INGENIERÍA Y
+                  LICENCIATURA SEPTIEMBRE - DICIEMBRE 2025</a
+                >
+              </div>
+              <div class="mt-4">
+                <img src="assets/img/iconos/pdf-24_32.png" />
+                <a
+                  href="assets/content/tramites-internos/REQUISITOS_DE_PREINSCRIPCION_GEN_17.0_DE_TSU_SEPTIEMBRE_DICIEMBRE_2025.pdf"
+                  target="_blank"
+                  >REQUISITOS PARA LA PREINSCRIPCIÓN GENERACIÓN 17.0 DE TÉCNICO
+                  SUPERIOR UNIVERSITARIO SEPTIEMBRE - DICIEMBRE 2025</a
+                >
+              </div>
+            </div>
           </div>
         </div>
+        <!--/ Panel 1 end-->
 
-        <!--Bajas-->
-        <div class="tab-pane fade" id="bajas" role="tabpanel" aria-labelledby="bajas-tab">
-          <p class="font-weight-bold">Procedimiento:</p>
-          <ol>
-            <li>
-              Pasar con el profesor de Tiempo Completo para realizar una
-              entrevista y aplicar la baja.
-            </li>
-            <li>
-              Acudir al Departamento de Servicios Escolares donde se entregará
-              el formato de sellos y firmas de no adeudo para su respectivo
-              llenado; y
-            </li>
-            <li>
-              Al momento de entregar el formato firmado y sellado (formato de
-              baja) se entregará documentos originales en caso de baja
-              Definitiva y solo copias en caso de Baja temporal.
-            </li>
-          </ol>
-          <p class="font-weight-bold">Tipos de Bajas:</p>
-          <ul class="font-weight-bold">
-            <li>
-              Baja Académica Temporal:
-              <span class="font-weight-normal">
-                El estudiante Regular que aprueba alguna de sus asignaturas,
-                agotando los procesos de la evaluación de recuperación, de la
-                evaluación extraordinaria y no le es posible reinscribirse al
-                cuatrimestre que reprobó, y cuando el estudiante abandone su
-                periodo de estadía profesional.</span>
-            </li>
-            <li>
-              Baja Académica Definitiva:
-              <span class="font-weight-normal">El estudiante Condicionado que reprueba alguna de sus
-                asignaturas en cualquier periodo posterior al que adquirió su
-                estatus académico, agotando su proceso de recuperación y cuando
-                el estudiante abandone su periodo de estadía profesional por
-                segunda ocasión.</span>
-            </li>
-            <li>
-              Baja Voluntaria Temporal:
-              <span class="font-weight-normal">El estudiante que voluntariamente interrumpe sus estudios; a
-                solicitud escrita ante Dirección y sin retirar sus documentos de
-                Escolares.
-              </span>
-            </li>
-            <li>
-              Baja Voluntaria Definitiva:
-              <span class="font-weight-normal">El estudiante que decide retirarse voluntariamente de la UTS;
-                notificando por escrito su deseo de no regresar a la UTS y
-                retirando sus documentos de Escolares.</span>
-            </li>
-            <li>
-              Baja Administrativa Temporal:
-              <span class="font-weight-normal">El estudiante que no complete en tiempo y forma el proceso de
-                inscripción; quien no haya entregado su Certificado de
-                Bachillerato Original tal como se establece en el Artículo 6 del
-                presente reglamento; y quien así sea sancionado por Comisión de
-                Honor y Justicia.</span>
-            </li>
-            <li>
-              Baja Administrativa Definitiva:
-              <span class="font-weight-normal">El estudiante que así sea sancionado por la Comisión de Honor y
-                Justicia.</span>
-            </li>
-          </ul>
-        </div>
-
-        <!--Equivalencias-->
-        <div class="tab-pane fade" id="equivalencias" role="tabpanel" aria-labelledby="equivalencias-tab">
-          <p>
-            Pendiente (se está trabajando con las áreas correspondientes para su
-            actualización).
-          </p>
-        </div>
-
-        <!--Reingresos o Altas Intermedias-->
-        <div class="tab-pane fade" id="reingresos" role="tabpanel" aria-labelledby="reingresos-tab">
-          <p>
-            Este proceso aplica cuando un alumno tramitó una baja temporal o de
-            otra UT y decide reincorporarse para el periodo inmediato.
-          </p>
-          <p class="font-weight-bold">Procedimiento:</p>
-          <ol>
-            <li>Obtener aprobación por escrito del Director de Carrera.</li>
-            <li>
-              Entregar aprobación a Servicios Escolares para proceder su
-              reinscripción.
-            </li>
-            <li>
-              Seguir el procedimiento de reinscripción según Calendario Escolar
-              y fechas de reinscripción.
-            </li>
-          </ol>
-        </div>
-
-        <!--Reinscripción-->
-        <div class="tab-pane fade" id="reinscripcion" role="tabpanel" aria-labelledby="reinscripcion-tab">
-          <div class="mt-4">
-            <img src="assets/img/iconos/pdf-24_32.png" />
-            <a href="assets/content/tramites-internos/REQUISITOS-RE-INSCRIPCION-MAYO-2025.pdf" target="_blank">
-              REQUISITOS DE RE-INSCRIPCIÓN CUATRIMESTRE MAYO-AGOSTO 2025
-            </a>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a
+                data-toggle="collapse"
+                class="collapsed"
+                data-parent="#accordion"
+                href="#collapseTwo"
+                >Bajas</a
+              >
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p class="font-weight-bold">Procedimiento:</p>
+              <ol>
+                <li>
+                  Pasar con el profesor de Tiempo Completo para realizar una
+                  entrevista y aplicar la baja.
+                </li>
+                <li>
+                  Acudir al Departamento de Servicios Escolares donde se
+                  entregará el formato de sellos y firmas de no adeudo para su
+                  respectivo llenado; y
+                </li>
+                <li>
+                  Al momento de entregar el formato firmado y sellado (formato
+                  de baja) se entregará documentos originales en caso de baja
+                  Definitiva y solo copias en caso de Baja temporal.
+                </li>
+              </ol>
+              <p class="font-weight-bold">Tipos de Bajas:</p>
+              <ul class="font-weight-bold">
+                <li>
+                  Baja Académica Temporal:
+                  <span class="font-weight-normal">
+                    El estudiante Regular que aprueba alguna de sus asignaturas,
+                    agotando los procesos de la evaluación de recuperación, de
+                    la evaluación extraordinaria y no le es posible
+                    reinscribirse al cuatrimestre que reprobó, y cuando el
+                    estudiante abandone su periodo de estadía profesional.</span
+                  >
+                </li>
+                <li>
+                  Baja Académica Definitiva:
+                  <span class="font-weight-normal"
+                    >El estudiante Condicionado que reprueba alguna de sus
+                    asignaturas en cualquier periodo posterior al que adquirió
+                    su estatus académico, agotando su proceso de recuperación y
+                    cuando el estudiante abandone su periodo de estadía
+                    profesional por segunda ocasión.</span
+                  >
+                </li>
+                <li>
+                  Baja Voluntaria Temporal:
+                  <span class="font-weight-normal"
+                    >El estudiante que voluntariamente interrumpe sus estudios;
+                    a solicitud escrita ante Dirección y sin retirar sus
+                    documentos de Escolares.
+                  </span>
+                </li>
+                <li>
+                  Baja Voluntaria Definitiva:
+                  <span class="font-weight-normal"
+                    >El estudiante que decide retirarse voluntariamente de la
+                    UTS; notificando por escrito su deseo de no regresar a la
+                    UTS y retirando sus documentos de Escolares.</span
+                  >
+                </li>
+                <li>
+                  Baja Administrativa Temporal:
+                  <span class="font-weight-normal"
+                    >El estudiante que no complete en tiempo y forma el proceso
+                    de inscripción; quien no haya entregado su Certificado de
+                    Bachillerato Original tal como se establece en el Artículo 6
+                    del presente reglamento; y quien así sea sancionado por
+                    Comisión de Honor y Justicia.</span
+                  >
+                </li>
+                <li>
+                  Baja Administrativa Definitiva:
+                  <span class="font-weight-normal"
+                    >El estudiante que así sea sancionado por la Comisión de
+                    Honor y Justicia.</span
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+        <!--/ Panel 2 end-->
 
-        <!--Solicitud de Referencia-->
-        <div class="tab-pane fade" id="solicitud" role="tabpanel" aria-labelledby="solicitud-tab">
-          <div>
-            <img src="assets/img/iconos/pdf-24_32.png" />
-            <a href="assets/content/tramites-internos/PlataformaPagos.pdf" target="_blank">
-              Procedimiento para realizar el pago de servicios.
-            </a>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a
+                data-toggle="collapse"
+                class="collapsed"
+                data-parent="#accordion"
+                href="#collapseThree"
+                >Equivalencias</a
+              >
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>
+                Pendiente (se está trabajando con las áreas correspondientes
+                para su actualización).
+              </p>
+            </div>
           </div>
         </div>
+        <!--/ Panel 3 end-->
 
-        <!--Titulación-->
-        <div class="tab-pane fade" id="titulacion" role="tabpanel" aria-labelledby="titulacion-tab">
-          <div class="mt-4">
-            <!-- <p>Pendiente de publicarse.</p> -->
-            <img src="assets/img/iconos/pdf-24_32.png" />
-            <a href="assets/content/tramites-internos/Requisitos_Titulacion_Gen_13.0_ING.pdf" target="_blank">REQUISITOS TRÁMITE DE TITULACIÓN INGENIERÍA/LICENCIATURA (GENERACIÓN 13.0)</a>
-              
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a
+                data-toggle="collapse"
+                class="collapsed"
+                data-parent="#accordion"
+                href="#collapseFour"
+                >Reingresos o Altas Intermedias</a
+              >
+            </h4>
           </div>
-          <!--
-          <ol>
-            <li>El estudiante deberá aprobar todas las asignaturas del plan de estudios.</li>
-            <li>Tener el expediente académico y escolar completo.</li>
-            <li>Entregar copia de la aprobación para la impresión de reporte de estadías REDIC016 al Departamento de
-              Servicios Escolares.</li>
-            <li>Recabar firmas y entregar al Departamento de Servicios Escolares la carta de liberación de no adeudos
-              con la universidad (REESC007).</li>
-            <li>Llenar la solicitud de acta de exención (REESC008) por cuadruplicado, dos días hábiles antes de la fecha
-              de presentación y entregar al Departamento de Servicios Escolares, Director de Carrera y Dirección de
-              Vinculación.</li>
-            <li>Presentar fotografías con adherible, de frente en blanco y negro, en papel mate con retoque, fondo
-              blanco, orejas y frente descubiertos, sin lentes, aretes ni pupilentes de color. </li>
-            <li>Hombres sin bigote, sin barba, cabello corto y arreglado, saco oscuro y corbata, sin piercing.</li>
-            <li>Mujeres maquillaje natural, blusa sin escote, saco tono oscuro y cabello recogido sin piercing.</li>
-            <li>Entregar 4 (cuatro) fotografías tamaño título (6 cm ancho X 9.0 largo cm. ovaladas).</li>
-            <li>Entregar 9 (nueve) fotografías tamaño infantil (2.5 X 3 cm y cuadro)</li>
-            <li>Realizar el pago de Derechos de Titulación (entregar copia a servicios escolares), 2 días antes a la
-              titulación. </li>
-            <li>Entregar el reporte de estadía profesional en formato PDF y grabado en CD a: </li>
-            <ul>
-              <li>Área de Biblioteca.</li>
-              <li>Asesor Académico.</li>
-              <li>Director de carrera.</li>
-            </ul>
-            <li>Llenar solicitud para registro de título (Trámite ante la DGP-SEP, México) proporcionada por el área de
-              servicios escolares. </li>
-          </ol>
-          -->
+          <div id="collapseFour" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>
+                Este proceso aplica cuando un alumno tramitó una baja temporal o
+                de otra UT y decide reincorporarse para el periodo inmediato.
+              </p>
+              <p class="font-weight-bold">Procedimiento:</p>
+              <ol>
+                <li>Obtener aprobación por escrito del Director de Carrera.</li>
+                <li>
+                  Entregar aprobación a Servicios Escolares para proceder su
+                  reinscripción.
+                </li>
+                <li>
+                  Seguir el procedimiento de reinscripción según Calendario
+                  Escolar y fechas de reinscripción.
+                </li>
+              </ol>
+            </div>
+          </div>
         </div>
+        <!--/ Panel 4 end-->
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a
+                data-toggle="collapse"
+                class="collapsed"
+                data-parent="#accordion"
+                href="#collapseFive"
+                >Reinscripción</a
+              >
+            </h4>
+          </div>
+          <div id="collapseFive" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="mt-4">
+                <img src="assets/img/iconos/pdf-24_32.png" />
+                <a
+                  href="assets/content/tramites-internos/REQUISITOS-RE-INSCRIPCION-MAYO-2025.pdf"
+                  target="_blank"
+                >
+                  REQUISITOS DE RE-INSCRIPCIÓN CUATRIMESTRE MAYO-AGOSTO 2025
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/ Panel 5 end-->
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a
+                data-toggle="collapse"
+                class="collapsed"
+                data-parent="#accordion"
+                href="#collapseSix"
+                >Solicitud de Referencia</a
+              >
+            </h4>
+          </div>
+          <div id="collapseSix" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div>
+                <img src="assets/img/iconos/pdf-24_32.png" />
+                <a
+                  href="assets/content/tramites-internos/PlataformaPagos.pdf"
+                  target="_blank"
+                >
+                  Procedimiento para realizar el pago de servicios.
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/ Panel 5 end-->
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a
+                data-toggle="collapse"
+                class="collapsed"
+                data-parent="#accordion"
+                href="#collapseSeven"
+                >Titulación</a
+              >
+            </h4>
+          </div>
+          <div id="collapseSeven" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="mt-4">
+                <!-- <p>Pendiente de publicarse.</p> -->
+                <img src="assets/img/iconos/pdf-24_32.png" />
+                <a
+                  href="assets/content/tramites-internos/Requisitos_Titulacion_Gen_13.0_ING.pdf"
+                  target="_blank"
+                  >REQUISITOS TRÁMITE DE TITULACIÓN INGENIERÍA/LICENCIATURA
+                  (GENERACIÓN 13.0)</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/ Panel 7 end-->
       </div>
     </div>
     <div class="col-md-3">
